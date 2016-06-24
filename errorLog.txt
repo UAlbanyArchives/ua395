@@ -1,0 +1,172 @@
+***********************************************************************************
+2016-06-07 15:49:43
+304.602535963 seconds
+5.07670893272 minutes
+0.0846118155453 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 251, in <module>
+    print metahash
+NameError: name 'metahash' is not defined
+***********************************************************************************
+2016-06-08 10:24:28
+7.47722101212 seconds
+0.124620350202 minutes
+0.0020770058367 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 154, in <module>
+    hashIndex = simplejson.loads(fp.read())
+  File "/usr/local/lib/python2.7/dist-packages/simplejson/__init__.py", line 516, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python2.7/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/local/lib/python2.7/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+JSONDecodeError: Unterminated string starting at: line 1 column 114686 (char 114685)
+***********************************************************************************
+2016-06-09 14:48:40
+17.9892241955 seconds
+0.299820403258 minutes
+0.00499700672097 hours
+Traceback:
+Error: existing Album records not found.***********************************************************************************
+2016-06-09 14:53:06
+284.078870058 seconds
+4.7346478343 minutes
+0.0789107972383 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 240, in <module>
+    imagesFile.close()
+  File "lxml.etree.pyx", line 3239, in lxml.etree.parse (src/lxml/lxml.etree.c:69955)
+  File "parser.pxi", line 1748, in lxml.etree._parseDocument (src/lxml/lxml.etree.c:102066)
+  File "parser.pxi", line 1774, in lxml.etree._parseDocumentFromURL (src/lxml/lxml.etree.c:102330)
+  File "parser.pxi", line 1678, in lxml.etree._parseDocFromFile (src/lxml/lxml.etree.c:101365)
+  File "parser.pxi", line 1110, in lxml.etree._BaseParser._parseDocFromFile (src/lxml/lxml.etree.c:96817)
+  File "parser.pxi", line 582, in lxml.etree._ParserContext._handleParseResultDoc (src/lxml/lxml.etree.c:91275)
+  File "parser.pxi", line 683, in lxml.etree._handleParseResult (src/lxml/lxml.etree.c:92461)
+  File "parser.pxi", line 620, in lxml.etree._raiseParseError (src/lxml/lxml.etree.c:91722)
+IOError: Error reading file '/home/bcadmin/Desktop/Processing/ua395/stagingUA395/images.xml': failed to load external entity "/home/bcadmin/Desktop/Processing/ua395/stagingUA395/images.xml"
+***********************************************************************************
+2016-06-09 15:47:44
+218.297370911 seconds
+3.63828951518 minutes
+0.0606381585863 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 249, in <module>
+    input = ET.parse(os.path.join(stagingPath, "images.xml"), parser)
+  File "lxml.etree.pyx", line 3239, in lxml.etree.parse (src/lxml/lxml.etree.c:69955)
+  File "parser.pxi", line 1748, in lxml.etree._parseDocument (src/lxml/lxml.etree.c:102066)
+  File "parser.pxi", line 1774, in lxml.etree._parseDocumentFromURL (src/lxml/lxml.etree.c:102330)
+  File "parser.pxi", line 1678, in lxml.etree._parseDocFromFile (src/lxml/lxml.etree.c:101365)
+  File "parser.pxi", line 1110, in lxml.etree._BaseParser._parseDocFromFile (src/lxml/lxml.etree.c:96817)
+  File "parser.pxi", line 582, in lxml.etree._ParserContext._handleParseResultDoc (src/lxml/lxml.etree.c:91275)
+  File "parser.pxi", line 683, in lxml.etree._handleParseResult (src/lxml/lxml.etree.c:92461)
+  File "parser.pxi", line 620, in lxml.etree._raiseParseError (src/lxml/lxml.etree.c:91722)
+IOError: Error reading file '/home/bcadmin/Desktop/Processing/ua395/stagingUA395/images.xml': failed to load external entity "/home/bcadmin/Desktop/Processing/ua395/stagingUA395/images.xml"
+***********************************************************************************
+2016-06-09 15:52:04
+229.472212076 seconds
+3.82453686794 minutes
+0.0637422811323 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 392, in <module>
+    for root, dirs, files in os.walk(folder):
+  File "/usr/lib/python2.7/os.py", line 276, in walk
+    names = listdir(top)
+TypeError: coercing to Unicode: need string or buffer, lxml.etree._Element found
+***********************************************************************************
+2016-06-10 09:38:10
+0.193724870682 seconds
+0.0032287478447 minutes
+5.38124640783e-05 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 248, in <module>
+    shutil.copy2("images.xml", os.path.join("arrangment", "images" + startTimeReadable + ".xml"))
+  File "/usr/lib/python2.7/shutil.py", line 130, in copy2
+    copyfile(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: 'arrangment/images2016-06-10_09-29-52.xml'
+***********************************************************************************
+2016-06-10 09:50:18
+0.000292062759399 seconds
+4.86771265666e-06 minutes
+8.11285442776e-08 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 248, in <module>
+    shutil.copy2("images.xml", os.path.join("arrangment", "images" + startTimeReadable + ".xml"))
+  File "/usr/lib/python2.7/shutil.py", line 130, in copy2
+    copyfile(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: 'arrangment/images2016-06-10_09-44-05.xml'
+***********************************************************************************
+2016-06-10 11:42:47
+5884.9907341 seconds
+98.0831789017 minutes
+1.63471964836 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 404, in <module>
+    shutil.copy2("images.xml", os.path.join("baseDir", "arrangment"))
+  File "/usr/lib/python2.7/shutil.py", line 130, in copy2
+    copyfile(src, dst)
+  File "/usr/lib/python2.7/shutil.py", line 83, in copyfile
+    with open(dst, 'wb') as fdst:
+IOError: [Errno 2] No such file or directory: 'baseDir/arrangment'
+***********************************************************************************
+2016-06-10 12:02:39
+880.423002005 seconds
+14.6737167001 minutes
+0.244561945001 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 404, in <module>
+    shutil.copy2("images.xml", os.path.join(baseDir, "arrangment"))
+NameError: name 'baseDir' is not defined
+***********************************************************************************
+2016-06-10 12:35:12
+738.361206055 seconds
+12.3060201009 minutes
+0.205100335015 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 405, in <module>
+    os.rename(os.path.join("basePath", "arrangment", "images.xml"), "images" + startTimeFilename + ".xml")
+OSError: [Errno 2] No such file or directory
+***********************************************************************************
+2016-06-10 13:36:19
+312.177151918 seconds
+5.20295253197 minutes
+0.0867158755329 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 405, in <module>
+    os.rename(os.path.join("basePath", "arrangement", "images.xml"), "images" + startTimeFilename + ".xml")
+OSError: [Errno 2] No such file or directory
+***********************************************************************************
+2016-06-10 13:57:08
+305.268368959 seconds
+5.08780614932 minutes
+0.0847967691554 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 406, in <module>
+    os.rename(os.path.join("basePath", "arrangement", "images.xml"), "images" + startTimeFilename + ".xml")
+OSError: [Errno 2] No such file or directory
+***********************************************************************************
+2016-06-10 14:17:20
+337.147089958 seconds
+5.61911816597 minutes
+0.0936519694328 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 416, in <module>
+    logText = logText + "\n" + totalSize + " bytes or " + readableSize + " downloaded"
+TypeError: cannot concatenate 'str' and 'int' objects
