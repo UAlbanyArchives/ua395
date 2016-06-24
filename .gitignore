@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+#specific files
+key.txt
+blocked.txt
+password.txt
+stagingUA395/
+
 # Distribution / packaging
 .Python
 env/
