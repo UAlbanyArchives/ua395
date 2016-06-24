@@ -7,9 +7,9 @@ __pycache__/
 *.so
 
 #specific files
-key.txt
-blocked.txt
-password.txt
+/key.txt
+/blocked.txt
+/password.txt
 stagingUA395/
 
 # Distribution / packaging
