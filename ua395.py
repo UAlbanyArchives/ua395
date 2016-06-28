@@ -180,8 +180,8 @@ try:
 		hashIndex = simplejson.loads(fp.read())
 		
 	if os.path.isfile(os.path.join(basePath, "images.xml")):
-		imageInput = ET.parse(os.path.join(basePath, "images.xml"), parser)
-		imagesXML = imageInput.getroot()
+		#imageInput = ET.parse(os.path.join(basePath, "images.xml"), parser)
+		imagesXML = ET.Element("albums")
 	else:
 		imagesXML = ET.Element("albums")
 
@@ -196,7 +196,11 @@ try:
 			folderXML.set("uri", folder.find("uri").text)
 
 		#url for api request for each album to list images
-		url = "http://www.smugmug.com" + folder.find("imagesURI").text + "?APIKey=yOoGBuxh2vLhQzmESiDk1qrqVsVBICUZ"
+		keyFile = blockedFile = open("key.txt", "r")
+		line1 = keyFile.readline().split("\n")[0]
+		keyString = line1.split("Key: ")[1].strip()
+		keyFile.close()
+		url = "http://www.smugmug.com" + folder.find("imagesURI").text + "?APIKey=" + keyString
 		r = requests.get(url, headers=headers)
 		#print status code if not successful
 		if str(r.status_code) != "200":
@@ -237,6 +241,14 @@ try:
 					runningFileSize = runningFileSize + int(image["ArchivedSize"])
 				except:
 					pass
+
+	#remove empty albumns from images.xml
+	for albumElement in imagesXML:
+		#print "looking at " + str(albumElement.attrib["name"])
+		#print "count is " + str(len(albumElement.findall("image")))
+		if len(albumElement.findall("image")) == 0:
+			imagesXML.remove(albumElement)
+
 
 	imageString = ET.tostring(imagesXML, pretty_print=True, xml_declaration=True, encoding="utf-8")
 	imagesFile = open("images.xml", "w")
@@ -360,11 +372,6 @@ try:
 						group.remove(file)
 						os.remove(thumbFile)
 						os.remove(makeFile)
-						#remove directories if empty
-						if os.listdir(thumbDir) == []:
-							os.rmdir(thumbDir)
-						if os.listdir(destination) == []:
-							os.rmdir(destination)
 					else:
 						hashIndex.update({file.find("uri").text: fileHash})
 				else:
@@ -398,8 +405,16 @@ try:
 				totalSize += os.path.getsize(fp)
 		readableSize = humansize(totalSize)
 
+
+	#remove empty directories
+	for root, dirs, files in os.walk(os.path.join(stagingPath, "ualbanyphotos")):
+		for folder in reversed(dirs):
+			if len(os.listdir(os.path.join(root, folder))) == 0:
+				print "removing " + folder
+				os.rmdir(os.path.join(root, folder))
+
 	
-	#log metadata files for crawl
+	#log albums and images files for crawl
 	startTimeFilename = startTimeReadable.replace(":", "-").replace(" ", "_")
 	shutil.copy2("images.xml", os.path.join(basePath, "arrangement"))
 	print os.path.join(basePath, "arrangement", "images.xml")
@@ -432,3 +447,8 @@ except:
 	errorText = "***********************************************************************************\n" + str(time.strftime("%Y-%m-%d %H:%M:%S")) + "\n" + str(finalTime) + " seconds\n" + str(finalTime/60) + " minutes\n" + str(finalTime/3600) + " hours" + "\nTraceback:\n" + exceptMsg
 	errorLog.write(errorText)
 	errorLog.close()
+
+
+	#needs:
+	#Remove empty folders
+	#create metadata file for SIP
