@@ -170,3 +170,95 @@ Traceback (most recent call last):
   File "ua395.py", line 416, in <module>
     logText = logText + "\n" + totalSize + " bytes or " + readableSize + " downloaded"
 TypeError: cannot concatenate 'str' and 'int' objects
+***********************************************************************************
+2016-06-28 12:24:59
+9.27055907249 seconds
+0.154509317875 minutes
+0.00257515529792 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 163, in <module>
+    passwordFile = open("password.txt", "w")
+IOError: [Errno 13] Permission denied: 'password.txt'
+***********************************************************************************
+2016-06-28 12:27:49
+72.9152441025 seconds
+1.21525406837 minutes
+0.0202542344729 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 204, in <module>
+    r = requests.get(url, headers=headers)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 455, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/sessions.py", line 558, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python2.7/dist-packages/requests/adapters.py", line 330, in send
+    timeout=timeout
+  File "/usr/lib/python2.7/dist-packages/urllib3/connectionpool.py", line 562, in urlopen
+    body=body, headers=headers)
+  File "/usr/lib/python2.7/dist-packages/urllib3/connectionpool.py", line 414, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+  File "/usr/lib/python2.7/httplib.py", line 1051, in getresponse
+    response.begin()
+  File "/usr/lib/python2.7/httplib.py", line 415, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python2.7/httplib.py", line 371, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib/python2.7/socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+KeyboardInterrupt
+***********************************************************************************
+2016-06-28 12:40:31
+523.959316015 seconds
+8.73265526692 minutes
+0.145544254449 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 404, in <module>
+    if len(os.listdir(folder)) == 0:
+OSError: [Errno 2] No such file or directory: 'StudentLife'
+***********************************************************************************
+2016-06-28 15:22:30
+7.77066206932 seconds
+0.129511034489 minutes
+0.00215851724148 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 185, in <module>
+    imagesXML = imageInput.getroot()
+AttributeError: 'lxml.etree._Element' object has no attribute 'getroot'
+***********************************************************************************
+2016-06-28 15:50:38
+248.48515892 seconds
+4.14141931534 minutes
+0.0690236552556 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 247, in <module>
+    print "looking at " + str(albumElement.attrib("name"))
+TypeError: 'lxml.etree._Attrib' object is not callable
+***********************************************************************************
+2016-06-28 16:13:23
+456.226423025 seconds
+7.60377371709 minutes
+0.126729561951 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 247, in <module>
+    print "looking at " + str(albumElement.attrib["name"])
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xe1' in position 17: ordinal not in range(128)
+***********************************************************************************
+2016-06-28 16:32:18
+443.616284132 seconds
+7.39360473553 minutes
+0.123226745592 hours
+Traceback:
+Traceback (most recent call last):
+  File "ua395.py", line 250, in <module>
+    images.remove(albumElement)
+NameError: name 'images' is not defined
