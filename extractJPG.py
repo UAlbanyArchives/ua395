@@ -2,12 +2,12 @@ import os
 from imagemounter import ImageParser
 from subprocess import Popen, PIPE
 from lxml import etree as ET
-from wand.image import Image
+import time
 
 imageDir = "/home/bcadmin/Documents/ua395-1ea0335f-4759-4b1a-a7f7-ca15aac3ba19/data/ua395"
 workingDir = "/home/bcadmin/Documents"
 
-outputDir = "/home/bcadmin/Documents/fromDVDs"
+outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs"
 if not os.path.isdir(outputDir):
 	print "making outputDir"
 	os.mkdir(outputDir)
@@ -16,7 +16,7 @@ count = 0
 for diskImage in os.listdir(imageDir):
 	#for limiting images for testing purposes
 	count = count + 1
-	if count == 2:
+	if count > 0:
 	#if diskImage == "disk6ba01c70-4900-4012-a393-8cc59c817b25.dd":
 		print diskImage
 		diskOutput = os.path.join(outputDir, diskImage)
@@ -115,6 +115,8 @@ for diskImage in os.listdir(imageDir):
 							fileExt = os.path.splitext(file)[1]
 							if fileExt.lower() in extentionList:
 								print "converting " + file
+								#print "original size: " + str(os.path.getsize(os.path.join(root, file)))
+								startTime = time.time()
 								convertCmd = ["convert \"" + os.path.join(root, file) + "\" \"" + os.path.join(root, os.path.splitext(file)[0]) + ".JPG\""]
 								convert = Popen(convertCmd, shell=True, stdout=PIPE, stderr=PIPE)
 								stdout, stderr = convert.communicate()
@@ -122,6 +124,8 @@ for diskImage in os.listdir(imageDir):
 									print "JPEG error: " + stderr
 								else:
 									os.remove(os.path.join(root, file))
+									#print time.time() - startTime
+									#print "compress size: " + str(os.path.getsize(os.path.join(root, os.path.splitext(file)[0]) + ".JPG"))
 
 
 		os.remove(outputXML)
