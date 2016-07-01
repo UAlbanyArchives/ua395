@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import requests
 import json
 from lxml import etree as ET
@@ -10,11 +12,15 @@ import simplejson
 import shutil
 import traceback
 import datetime
-import exifread
+from PIL import Image
+import sys
+from subprocess import Popen, PIPE
+import smtplib
 
 startTime = time.time()
 startTimeReadable = str(time.strftime("%Y-%m-%d %H:%M:%S"))
 print startTimeReadable
+print(sys.getfilesystemencoding())
 
 #start log
 startLog = open("log.txt", "a")
@@ -251,11 +257,11 @@ try:
 	imagesFile.close()
 
 	#for debugging
-	"""
+	
 	imagesFile2 = open("imagesTest.xml", "w")
 	imagesFile2.write(imageString)
 	imagesFile2.close()
-	"""
+	
 		
 			
 	metaTime = time.time() - startTime
@@ -294,7 +300,7 @@ try:
 					path = path.replace("-/", "/")
 					path = os.path.dirname(path)
 					path = path.replace("www.ualbanyphotos.com/", "").replace("photos.smugmug.com/", "")
-					path = path.replace("-", " ")
+					#path = path.replace("-", " ")
 					#Only for Windows paths:
 					if os.name =="nt":				
 						path = path.replace("/", "\\")
@@ -414,6 +420,7 @@ try:
 			imagesXML.remove(albumElement)
 		else:
 			newAlbumCount = newAlbumCount + 1
+	print str(newAlbumCount) + " new albums found"
 
 	imageString = ET.tostring(imagesXML, pretty_print=True, xml_declaration=True, encoding="utf-8")
 	imagesFile = open("images.xml", "w")
@@ -436,12 +443,10 @@ try:
 	for root, dirs, files in os.walk(os.path.join(stagingPath, "ualbanyphotos"), topdown=False):
 		for folder in dirs:
 			if len(os.listdir(os.path.join(root, folder))) == 0:
-				print "removing " + folder
 				os.rmdir(os.path.join(root, folder))
 	for root, dirs, files in os.walk(os.path.join(stagingPath, "ualbanyphotos"), topdown=True):
 		for folder in reversed(dirs):
 			if len(os.listdir(os.path.join(root, folder))) == 0:
-				print "removing " + folder
 				os.rmdir(os.path.join(root, folder))
 
 	
@@ -506,7 +511,15 @@ try:
 				record = ET.Element("folder")
 			else:
 				record = ET.Element("file")
-			record.set("name", os.path.basename(path))
+			try:
+				record.set("name", os.path.basename(path))
+			except:
+				print str(traceback.format_exc())
+				metadataString = ET.tostring(sipRoot, pretty_print=True, xml_declaration=True, encoding="utf-8")
+				metadataFile = open(os.path.join(stagingPath, accessionNumber + ".xml"), "w")
+				metadataFile.write(metadataString)
+				metadataFile.close()
+
 			idXML = ET.SubElement(record, "id")
 			idXML.text = str(uuid.uuid4())
 			pathXML = ET.SubElement(record, "path")
@@ -516,18 +529,27 @@ try:
 			recordEventsXML = ET.SubElement(record, "recordEvents")
 			return record
 		#loop thorugh directory and create records
-		def loopAccession(path, root):
+		def loopAccession(path, root):			
 			if os.path.isdir(path):
-				record = makeRecord(path)
+				record = makeRecord(path.decode('utf-8'))
 				root.append(record)
 				for item in os.listdir(path):
 					root = loopAccession(os.path.join(path, item), record)
 			else:
 				root.append(makeRecord(path))
-			return root
-		sipRoot.append(loopAccession(os.path.join(stagingPath, "ualbanyphotos"), sipRoot))
+			return sipRoot
+		sipRoot = loopAccession(os.path.join(stagingPath, "ualbanyphotos"), sipRoot)
+
+		#for debugging
+		"""
+		metadataString = ET.tostring(sipRoot, pretty_print=True, xml_declaration=True, encoding="utf-8")
+		metadataFile = open(os.path.join(stagingPath, accessionNumber + ".xml"), "w")
+		metadataFile.write(metadataString)
+		metadataFile.close()
+		"""
+
 		for album in imagesXML:
-			albumUri = albumPath.attrib["uri"]
+			albumUri = album.attrib["uri"]
 			for albumListing in albumsXML:
 				if albumListing.find("uri").text == albumUri:
 					albumRecord = albumListing
@@ -538,7 +560,7 @@ try:
 			query = "/"
 			for level in albumPath.split("/"):
 				query = query + "/folder[@name='" + level + "']"
-			albumNode = sipRoot.xpath(query)
+			albumNode = sipRoot.xpath(query)[0]
 			albumNode.find("path").text = albumPath
 			unittitle = ET.Element("unittitle")
 			unittitle.text = albumRecord.find("name").text
@@ -557,15 +579,14 @@ try:
 
 			for image in album:
 				weburi = image.find("weburi").text.split("http://www.ualbanyphotos.com/")[1]
-				imagePath = os.path.basename(weburi)
+				imagePath = os.path.dirname(weburi)
 				if imagePath.startswith("/"):
 					imagePath = imagePath[1:]
 				query = "/"
 				for level in imagePath.split("/"):
 					query = query + "/folder[@name='" + level + "']"
-				imageNode = sipRoot.xpath(query)
-
-				imageNode.find("path").text = imagePath
+				imageNode = sipRoot.xpath(query)[0]
+				imageNode.find("path").text = imagePath + "/" + image.find("filename").text
 				unittitle = ET.Element("unittitle")
 				unittitle.text = image.find("caption").text
 				controlaccess = ET.Element("controlaccess")
@@ -574,10 +595,13 @@ try:
 				imageNode.find("description").append(controlaccess)
 				event1 = ET.SubElement(imageNode.find("curatorialEvents"), "event")
 				event1.text = "downloaded from SmugMug API"
-				downloadTime = imageNode.find("downloadTime").text
-				event1.set("timestamp", downloadTime)
-				event1.set("humanTime", datetime.datetime.fromtimestamp(int(downloadTime)).strftime('%Y-%m-%d %H:%M:%S'))
-				if imageNode.find("hash").text.lower() == "success":
+				if image.find("downloadTime") is None:
+					pass
+				else:
+					downloadTime = image.find("downloadTime").text.split(".")[0]
+					event1.set("timestamp", downloadTime)
+					event1.set("humanTime", datetime.datetime.fromtimestamp(int(downloadTime)).strftime('%Y-%m-%d %H:%M:%S'))
+				if image.find("hash").text.lower() == "success":
 					event2 = ET.SubElement(imageNode.find("curatorialEvents"), "event")
 					event2.text = "MD5 hash matched SmugMug hash"
 					event2.set("timestamp", downloadTime)
@@ -589,15 +613,13 @@ try:
 				imageNode.find("recordEvents").append(timestamp)
 				#exif date
 				try:
-					imageFile = os.path.join(stagingPath, "ualbanyphotos", imagePath, imageNode.find("filename").text)
-					with open(imagefile, "r") as img:
-						tags = exifread.process_file(img, stop_tag='DateTimeOriginal')
-						exifDate = tags.get("DateTimeOriginal")
-						img.close()
+					imageFile = os.path.join(stagingPath, "ualbanyphotos", imagePath, image.find("filename").text)
+					exifDate = Image.open(imageFile)._getexif()[36867]
 					timestamp = ET.Element("timestamp")
-					timestamp.text = exifDate
+					timestamp.text = exifDate.replace(" ", "T")
 					timestamp.set("timeType", "iso8601")
-					timestamp.set("parser", "exifread")
+					timestamp.set("parser", "PIL")
+					timestamp.set("source", "exif")
 					timestamp.set("label", "DateTimeOriginal")
 					imageNode.find("recordEvents").append(timestamp)
 
@@ -606,15 +628,21 @@ try:
 					print exceptMsg
 
 		metadataString = ET.tostring(sipRoot, pretty_print=True, xml_declaration=True, encoding="utf-8")
-		metadataFile = open(os.path.join(stagingPath), accessionNumber + ".xml", "w")
+		metadataFile = open(os.path.join(stagingPath, accessionNumber + ".xml"), "w")
 		metadataFile.write(metadataString)
 		metadataFile.close()
 		
 		#createSIP.py
-
+		print "bagging SIP"
+		sipCmd = "sudo python /home/bcadmin/Projects/createSIP/createSIP.py -m " + os.path.join(stagingPath, accessionNumber + ".xml") + " " + os.path.join(stagingPath, accessionNumber)
+		print sipCmd
+		createSIP = Popen(sipCmd, shell=True, stdout=PIPE, stderr=PIPE)
+		stdout, stderr = createSIP.communicate()
+		if len(stderr) > 0:
+			print stderr
 
 	else:
-		os.remove(os.path.join(stagingPath, "ualbanyphotos"))
+		os.rmdir(os.path.join(stagingPath, "ualbanyphotos"))
 
 
 	#update log.txt
@@ -628,6 +656,23 @@ try:
 	logText = logText + "\n" + str(totalSize) + " bytes or " + str(readableSize) + " downloaded"
 	finalTimeFile.write(logText)
 	finalTimeFile.close()
+
+	sender = 'AutoUploadError@gmail.com'
+	receivers = ['gwiedeman@albany.edu']
+	subject = "SmugMug Crawler Success"
+	body = logText
+	message = 'Subject: %s\n\n%s' % (subject, body)
+	smtpObj = smtplib.SMTP(host='smtp.gmail.com', port=587)
+	smtpObj.ehlo()
+	smtpObj.starttls()
+	smtpObj.ehlo()
+	keyFile = open("key.txt", "r")
+	lines = keyFile.readlines()
+	emailPW = lines[3]
+	keyFile.close()
+	smtpObj.login('UAlbanyArchivesNotify', emailPW)
+	smtpObj.sendmail(sender, receivers, message)
+	smtpObj.quit()
 
 	
 except:
@@ -645,6 +690,26 @@ except:
 	errorText = "***********************************************************************************\n" + str(time.strftime("%Y-%m-%d %H:%M:%S")) + "\n" + str(finalTime) + " seconds\n" + str(finalTime/60) + " minutes\n" + str(finalTime/3600) + " hours" + "\nTraceback:\n" + exceptMsg
 	errorLog.write(errorText)
 	errorLog.close()
+
+
+	sender = 'AutoUploadError@gmail.com'
+	receivers = ['gwiedeman@albany.edu']
+	subject = "SmugMug Crawler Error"
+
+	body = "ERROR: " + logText + "\n\n" + exceptMsg
+	message = 'Subject: %s\n\n%s' % (subject, body)
+	smtpObj = smtplib.SMTP(host='smtp.gmail.com', port=587)
+	smtpObj.ehlo()
+	smtpObj.starttls()
+	smtpObj.ehlo()
+	keyFile = open("key.txt", "r")
+	lines = keyFile.readlines()
+	emailPW = lines[3]
+	keyFile.close()
+	smtpObj.login('UAlbanyArchivesNotify', emailPW)
+	smtpObj.sendmail(sender, receivers, message)
+	smtpObj.quit()
+
 
 
 	#needs:
