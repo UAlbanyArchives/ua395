@@ -668,7 +668,7 @@ try:
 	smtpObj.ehlo()
 	keyFile = open("key.txt", "r")
 	lines = keyFile.readlines()
-	emailPW = lines[3]
+	emailPW = lines[2]
 	keyFile.close()
 	smtpObj.login('UAlbanyArchivesNotify', emailPW)
 	smtpObj.sendmail(sender, receivers, message)
@@ -704,7 +704,7 @@ except:
 	smtpObj.ehlo()
 	keyFile = open("key.txt", "r")
 	lines = keyFile.readlines()
-	emailPW = lines[3]
+	emailPW = lines[2]
 	keyFile.close()
 	smtpObj.login('UAlbanyArchivesNotify', emailPW)
 	smtpObj.sendmail(sender, receivers, message)
