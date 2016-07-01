@@ -657,7 +657,7 @@ try:
 	finalTimeFile.write(logText)
 	finalTimeFile.close()
 
-	sender = 'AutoUploadError@gmail.com'
+	sender = 'UAlbanyArchivesNotify@gmail.com'
 	receivers = ['gwiedeman@albany.edu']
 	subject = "SmugMug Crawler Success"
 	body = logText
@@ -692,7 +692,7 @@ except:
 	errorLog.close()
 
 
-	sender = 'AutoUploadError@gmail.com'
+	sender = 'UAlbanyArchivesNotify@gmail.com'
 	receivers = ['gwiedeman@albany.edu']
 	subject = "SmugMug Crawler Error"
 
