@@ -4,10 +4,10 @@ from subprocess import Popen, PIPE
 from lxml import etree as ET
 import time
 
-imageDir = "/home/bcadmin/Documents/ua395-1ea0335f-4759-4b1a-a7f7-ca15aac3ba19/data/ua395"
+imageDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages"
 workingDir = "/home/bcadmin/Documents"
 
-outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs"
+outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs2"
 if not os.path.isdir(outputDir):
 	print "making outputDir"
 	os.mkdir(outputDir)
@@ -82,10 +82,10 @@ for diskImage in os.listdir(imageDir):
 						if not os.path.isdir(newPath):
 							os.makedirs(newPath)
 						extention = filename.lower()[-4:]
-						extentionList = [".nef", ".crw", ".cr2", ".dng", ".raw", ".raf"]
+						extentionList = [".nef", ".crw", ".cr2", ".dng", ".raw", ".raf", ".tif", ".tiff"]
 						#get all jpgs or pngs
 						if filename.lower().endswith(".jpg") or filename.lower().endswith(".jpeg") or filename.lower().endswith(".png"):
-							if int(fileobject.find(ns + "filesize").text) > 2000000:
+							if int(fileobject.find(ns + "filesize").text) > 200000:
 								outfile = os.path.join(newPath, os.path.basename(filename))
 								icatCmd = "icat -f iso9660 -i raw \"" + os.path.join(imageDir, diskImage) + "\" " + inode + " > \"" + outfile + "\""
 								#print icatCmd
