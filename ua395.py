@@ -7,6 +7,7 @@ import time
 import urllib
 import os
 import uuid
+import shortuuid
 import hashlib
 import simplejson
 import shutil
@@ -46,7 +47,7 @@ if os.name == "nt":
 	stagingPath = "\\Processing\\ua395\\stagingUA395"
 else:
 	basePath = "/home/bcadmin/Desktop/Processing/ua395"
-	stagingPath = "/home/bcadmin/Desktop/Processing/ua395/stagingUA395"
+	stagingPath = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromSmugMug"
 
 try:
 	def readField(JSON, parent, fieldString):
@@ -461,7 +462,7 @@ try:
 	#make SIP metadata file
 	if newAlbumCount > 0:
 		collectionID = "ua395"
-		accessionNumber = collectionID + "-" + str(uuid.uuid4())
+		accessionNumber = collectionID + "-" + str(shortuuid.uuid())
 		sipRoot = ET.Element("accession")
 		sipRoot.set("version", "0.1")
 		sipRoot.set("number", accessionNumber)
@@ -531,7 +532,7 @@ try:
 		#loop thorugh directory and create records
 		def loopAccession(path, root):			
 			if os.path.isdir(path):
-				record = makeRecord(path.decode('utf-8'))
+				record = makeRecord(path.decode(sys.getfilesystemencoding()))
 				root.append(record)
 				for item in os.listdir(path):
 					root = loopAccession(os.path.join(path, item), record)
@@ -585,6 +586,7 @@ try:
 				query = "/"
 				for level in imagePath.split("/"):
 					query = query + "/folder[@name='" + level + "']"
+				query = query + "/file[@name='" + image.find("filename").text + "']"
 				imageNode = sipRoot.xpath(query)[0]
 				imageNode.find("path").text = imagePath + "/" + image.find("filename").text
 				unittitle = ET.Element("unittitle")
@@ -634,11 +636,13 @@ try:
 		
 		#createSIP.py
 		print "bagging SIP"
-		sipCmd = "sudo python /home/bcadmin/Projects/createSIP/createSIP.py -m " + os.path.join(stagingPath, accessionNumber + ".xml") + " " + os.path.join(stagingPath, accessionNumber)
+		sipCmd = "sudo python /home/bcadmin/Projects/createSIP/createSIP.py -m \"" + os.path.join(stagingPath, accessionNumber + ".xml") + "\" \"" + os.path.join(stagingPath, "ualbanyphotos") + "\""
 		print sipCmd
 		createSIP = Popen(sipCmd, shell=True, stdout=PIPE, stderr=PIPE)
 		stdout, stderr = createSIP.communicate()
 		if len(stderr) > 0:
+			print stderr
+		if len(stdout) > 0:
 			print stderr
 
 	else:
