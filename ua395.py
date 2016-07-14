@@ -314,7 +314,9 @@ try:
 					thumb = file.find("thumbnailurl").text
 					#print href
 					#download file
-					
+
+					print "downloading " + file.find("filename").text
+
 					try:
 						urllib.urlretrieve(href, makeFile)
 					except:
