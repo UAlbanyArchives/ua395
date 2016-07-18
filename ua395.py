@@ -45,9 +45,11 @@ def humansize(nbytes):
 if os.name == "nt":
 	basePath = "\\Processing\\ua395"
 	stagingPath = "\\Processing\\ua395\\stagingUA395"
+	hashdir = "\\LINCOLN\\Masters\\Special Collections\\accessions\\hashDir\\ua395Hash"
 else:
 	basePath = "/home/bcadmin/Desktop/Processing/ua395"
 	stagingPath = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromSmugMug"
+	hashDir = "/media/bcadmin/Lincoln/Special Collections/accessions/hashDir/ua395Hash"
 
 try:
 	def readField(JSON, parent, fieldString):
@@ -185,7 +187,8 @@ try:
 	albumFile.write(albumString)
 	albumFile.close()
 	
-	with open('hashIndex.json', 'r') as fp:
+	shutil.copy(os.path.join(hashDir,"hashIndex.json"), os.path.join(basePath, "hashIndexWorking.json"))
+	with open(os.path.join(basePath, 'hashIndexWorking.json'), 'r') as fp:
 		hashIndex = simplejson.loads(fp.read())
 		
 	if os.path.isfile(os.path.join(basePath, "images.xml")):
@@ -283,7 +286,7 @@ try:
 			#print "examining " + group.attrib["uri"]
 			
 			for file in group:
-				with open('hashIndex.json', 'r') as fp:
+				with open(os.path.join(basePath,'hashIndexWorking.json'), 'r') as fp:
 					hashIndex = simplejson.loads(fp.read())
 				if file.find("archivedmd5").text is None:
 					metaHash = "'''''"
@@ -328,6 +331,9 @@ try:
 									handle.write(block)
 						except:
 							try:
+								time.sleep(15)
+								if os.path.isfile(makeFile):
+									os.remove(makeFile)
 								print "failed second attempt to retrieve " + file.find("uri").text
 								href = href.replace("https://", "http://")
 								with open(makeFile, 'wb') as handle:
@@ -335,15 +341,28 @@ try:
 									for block in response.iter_content(1024):
 										handle.write(block)
 							except:
-								print "failed final attempt to retrieve " + file.find("uri").text
-								exceptMsg = str(traceback.format_exc())
-								finalTime = time.time() - startTime
-								print "Total Time: " + str(finalTime) + " seconds, " + str(finalTime/60) + " minutes, " + str(finalTime/3600) + " hours"
-								print exceptMsg
-								errorLog = open("errorLog.txt", "a")
-								errorText = "***********************************************************************************\n" + str(time.strftime("%Y-%m-%d %H:%M:%S")) + "\n" + str(finalTime) + " seconds\n" + str(finalTime/60) + " minutes\n" + str(finalTime/3600) + " hours" + "\nTraceback:\n" + exceptMsg
-								errorLog.write(errorText)
-								errorLog.close()
+								try:
+									time.sleep(300)
+									if os.path.isfile(makeFile):
+										os.remove(makeFile)
+									print "failed third attempt to retrieve " + file.find("uri").text
+									href = href.replace("https://", "http://")
+									with open(makeFile, 'wb') as handle:
+										response = requests.get(href, stream=True)
+										for block in response.iter_content(1024):
+											handle.write(block)
+								except:
+									print "failed final attempt to retrieve " + file.find("uri").text
+									print "tried to download image from " + href
+									exceptMsg = str(traceback.format_exc())
+									finalTime = time.time() - startTime
+									print "Total Time: " + str(finalTime) + " seconds, " + str(finalTime/60) + " minutes, " + str(finalTime/3600) + " hours"
+									print exceptMsg
+									exceptMsg = exceptMsg + "\ntried to download image " + file.find("uri").text + " from " + href
+									errorLog = open("errorLog.txt", "a")
+									errorText = "***********************************************************************************\n" + str(time.strftime("%Y-%m-%d %H:%M:%S")) + "\n" + str(finalTime) + " seconds\n" + str(finalTime/60) + " minutes\n" + str(finalTime/3600) + " hours" + "\nTraceback:\n" + exceptMsg
+									errorLog.write(errorText)
+									errorLog.close()
 								
 					thumbDir = os.path.join(destination, "thumbs")
 					if not os.path.isdir(thumbDir):
@@ -361,6 +380,9 @@ try:
 									handle.write(block)
 						except:
 							try:
+								time.sleep(15)
+								if os.path.isfile(thumbFile):
+									os.remove(thumbFile)
 								print "failed second attempt to retrieve thumbnail for " + file.find("uri").text
 								thumb = thumb.replace("https://", "http://")
 								with open(thumbFile, 'wb') as handle:
@@ -368,15 +390,28 @@ try:
 									for block in response.iter_content(1024):
 										handle.write(block)
 							except:
-								print "failed final attempt to retrieve thumbnail for " + file.find("uri").text
-								exceptMsg = str(traceback.format_exc())
-								finalTime = time.time() - startTime
-								print "Total Time: " + str(finalTime) + " seconds, " + str(finalTime/60) + " minutes, " + str(finalTime/3600) + " hours"
-								print exceptMsg
-								errorLog = open("errorLog.txt", "a")
-								errorText = "***********************************************************************************\n" + str(time.strftime("%Y-%m-%d %H:%M:%S")) + "\n" + str(finalTime) + " seconds\n" + str(finalTime/60) + " minutes\n" + str(finalTime/3600) + " hours" + "\nTraceback:\n" + exceptMsg
-								errorLog.write(errorText)
-								errorLog.close()
+								try:
+									time.sleep(300)
+									if os.path.isfile(thumbFile):
+										os.remove(thumbFile)
+									print "failed third attempt to retrieve thumbnail for " + file.find("uri").text
+									thumb = thumb.replace("https://", "http://")
+									with open(thumbFile, 'wb') as handle:
+										response = requests.get(thumb, stream=True)
+										for block in response.iter_content(1024):
+											handle.write(block)
+								except:
+									print "failed final attempt to retrieve thumbnail for " + file.find("uri").text
+									print "tried to download thumbnail from " + thumb
+									exceptMsg = str(traceback.format_exc())
+									finalTime = time.time() - startTime
+									print "Total Time: " + str(finalTime) + " seconds, " + str(finalTime/60) + " minutes, " + str(finalTime/3600) + " hours"
+									print exceptMsg
+									exceptMsg = exceptMsg + "\ntried to download thumbnail for " + file.find("uri").text + " from " + thumb
+									errorLog = open("errorLog.txt", "a")
+									errorText = "***********************************************************************************\n" + str(time.strftime("%Y-%m-%d %H:%M:%S")) + "\n" + str(finalTime) + " seconds\n" + str(finalTime/60) + " minutes\n" + str(finalTime/3600) + " hours" + "\nTraceback:\n" + exceptMsg
+									errorLog.write(errorText)
+									errorLog.close()
 
 					if file.find("downloadTime") is None:
 						downloadXML = ET.SubElement(file, "downloadTime")
@@ -409,7 +444,7 @@ try:
 						hashIndex[file.find("uri").text] = fileHash
 						
 							
-					with open('hashIndex.json', 'w') as fp:
+					with open(os.path.join(basePath,'hashIndexWorking.json'), 'w') as fp:
 						simplejson.dump(hashIndex, fp)
 					
 			
@@ -650,6 +685,10 @@ try:
 	else:
 		os.rmdir(os.path.join(stagingPath, "ualbanyphotos"))
 
+	if os.path.isfile(os.path.join(hashDir,"hashIndex.json")):
+		os.remove(os.path.join(hashDir,"hashIndex.json"))
+	shutil.copy(os.path.join(basePath,"hashIndexWorking.json"), os.path.join(hashDir,"hashIndex.json"))
+	os.remove(os.path.join(basePath,"hashIndexWorking.json"))
 
 	#update log.txt
 	finalTime = time.time() - startTime
@@ -697,6 +736,26 @@ except:
 	errorLog.write(errorText)
 	errorLog.close()
 
+	#serialize working data for debugging
+	if hashIndex is None:
+		pass
+	else:
+		with open('hashIndexWorking.json', 'w') as fp:
+			simplejson.dump(hashIndex, fp)
+	if albumsXML is None:
+		pass
+	else:
+		albumString = ET.tostring(albumsXML, pretty_print=True, xml_declaration=True, encoding="utf-8")
+		albumFile = open("albums.xml", "w")
+		albumFile.write(albumString)
+		albumFile.close()
+	if imageXML is None:
+		pass
+	else:
+		imageString = ET.tostring(imagesXML, pretty_print=True, xml_declaration=True, encoding="utf-8")
+		imagesFile = open("images.xml", "w")
+		imagesFile.write(imageString)
+		imagesFile.close()
 
 	sender = 'UAlbanyArchivesNotify@gmail.com'
 	receivers = ['gwiedeman@albany.edu']
