@@ -4,10 +4,10 @@ from subprocess import Popen, PIPE
 from lxml import etree as ET
 import time
 
-imageDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages"
+imageDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages_b3"
 workingDir = "/home/bcadmin/Documents"
 
-outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs2"
+outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs3"
 if not os.path.isdir(outputDir):
 	print "making outputDir"
 	os.mkdir(outputDir)
@@ -59,7 +59,7 @@ for diskImage in os.listdir(imageDir):
 					if fileobject.tag == ns + "fileobject":
 						filename = fileobject.find(ns + "filename").text
 						if filename.lower().endswith(".jpg") or filename.lower().endswith(".jpeg"):
-							if int(fileobject.find(ns + "filesize").text) > 2000000:
+							if int(fileobject.find(ns + "filesize").text) > 200000:
 								fileList.append(os.path.splitext(filename.lower())[0])
 								fileList.append(os.path.splitext(os.path.join(os.path.split(os.path.dirname(filename))[0], os.path.basename(filename)).lower())[0])
 				fileCount = len(volume.findall(ns + "fileobject"))

@@ -4,10 +4,10 @@ from subprocess import Popen, PIPE
 from lxml import etree as ET
 import time
 
-imageDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages"
+imageDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages_b3"
 workingDir = "/home/bcadmin/Documents"
 
-outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs2"
+outputDir = "/media/bcadmin/SPE/Electronic_Records_Library/ua395/fromDVDs3"
 
 root = ET.Element("photosFromDVD")
 errorRoot = ET.Element("errors")
@@ -57,7 +57,6 @@ for diskImage in os.listdir(imageDir):
 		print str(count) + " of " + str(totalImageCount)
 		imageFile = ET.SubElement(root, "imageFile")
 		jpegList = []
-		newJpegList = []
 		diskOutput = os.path.join(outputDir, diskImage)
 		if not os.path.isdir(diskOutput):
 			outputDirCheck = ET.SubElement(imageFile, "outputDirCheck")
@@ -137,10 +136,8 @@ for diskImage in os.listdir(imageDir):
 								pass
 							else:
 								if filename.lower().endswith(".jpg") or filename.lower().endswith(".jpeg"):
-									if int(fileobject.find(ns + "filesize").text) > 2000000:
-										jpegList.append(os.path.splitext(os.path.basename(filename))[0])
 									if int(fileobject.find(ns + "filesize").text) > 200000:
-										newJpegList.append(os.path.splitext(os.path.basename(filename))[0])
+										jpegList.append(os.path.splitext(os.path.basename(filename))[0])
 
 				for fileobject in volume:
 					if fileobject.tag == ns + "fileobject":
@@ -180,16 +177,8 @@ for diskImage in os.listdir(imageDir):
 								fileSize = fileobject.find(ns + "filesize").text
 
 								if filename.lower().endswith(".jpg") or filename.lower().endswith(".jpeg"):
-									if int(fileobject.find(ns + "filesize").text) <= 2000000:
-										if int(fileobject.find(ns + "filesize").text) > 200000:
-											#extract jpg
-											icatCmd = "icat -f iso9660 -i raw \"" + os.path.join(imageDir, diskImage) + "\" " + inode + " > \"" + outfile + "\""
-											print "extracting " + str(filename)
-											icat = Popen(icatCmd, shell=True, stdout=PIPE, stderr=PIPE)
-											stdout, stderr = icat.communicate()
-											if len(stderr) > 0:
-												print "icat raw error: " + stderr
-
+									if int(fileobject.find(ns + "filesize").text) <= 200000:
+										pass
 									else:
 										photoCount = photoCount + 1
 								else:
@@ -197,7 +186,7 @@ for diskImage in os.listdir(imageDir):
 										photoCount = photoCount + 1
 
 								if filename.lower().endswith(".jpg") or filename.lower().endswith(".jpeg"):
-									if int(fileobject.find(ns + "filesize").text) > 2000000:
+									if int(fileobject.find(ns + "filesize").text) > 200000:
 										jpegCount = jpegCount + 1
 										
 										if os.path.isfile(outfile):
@@ -210,14 +199,7 @@ for diskImage in os.listdir(imageDir):
 											errorRoot = foundError(errorRoot, "original JPG icat error", diskImage, filename, inode, fileSize, outfile)
 
 									
-
-								elif os.path.splitext(os.path.basename(filename))[0] in newJpegList:
-									#remove converted JPG
-									print "removing " + filename
-									originalOutfile = outfile
-									outfile = os.path.splitext(outfile)[0] + ".JPG"
-									if os.path.isfile(outfile):
-										os.remove(outfile)									
+							
 
 
 								elif filename.lower().endswith(".nef") or filename.lower().endswith(".cr2"):
@@ -387,8 +369,13 @@ for diskRecord in root:
 	for photoType in diskRecord:
 		if photoType.tag == "outputDirCheck":
 			pass
-		elif photoType.attrib["verifiedPer"] == "0" or photoType.attrib["verifiedPer"] == "100.0":
+		elif photoType.attrib["verifiedPer"] == "100.0":
 			pass
+		elif photoType.attrib["verifiedPer"] == "0":
+			if photoType.text == "0":
+				pass
+			else:
+				errorSwitch = True
 		else:
 			errorSwitch = True
 	if errorSwitch == True:
