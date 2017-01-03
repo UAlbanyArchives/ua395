@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type='text/xsl' href='collection-level.xsl'?> 
+<!DOCTYPE ead SYSTEM 'ead.dtd'>
+<ead id="nam_ua395">
+  <eadheader audience="external" countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="new" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="##" mainagencycode="nalsu" url="http://library.albany.edu/speccoll/findaids/eresources/findingaids/ua395.html">nam_ua395</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>DIGITAL MEDIA DEPARTMENT COLLECTION (UA395)<date normal="2002/2016" type="inclusive">2002-2016</date></titleproper>
+        <author>Gregory Wiedeman</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>M. E. Grenander Department of Special Collections and Archives</publisher>
+        <address>
+          <addressline>1400 Washington Avenue / Albany, New York 12222</addressline>
+        </address>
+        <date normal="2016" type="publication">Copyright 2016 By the University at Albany, SUNY. All rights reserved.</date>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Gregory Wiedeman<date normal="2016-07-22">2016 July 22</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Digital Media Department Collection<date normal="2002/2016" type="inclusive">2002-2016</date></titleproper>
+      <publisher/>
+      <date type="publication">Copyright 2016 By the University at Albany, SUNY. All rights reserved.</date>
+      <p>For reference queries contact Grenander Department Reference staff or (518)-437-3934</p>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <did>
+      <head>Descriptive Summary</head>
+      <unitid>nam_ua395</unitid>
+      <unittitle>Digital Media Department<unitdate label="Date:" normal="2002/2016" type="inclusive">2002-2016</unitdate></unittitle>
+      <abstract label="Abstract:">Digital photography that documents the University at Albany, SUNY.</abstract>
+      <langmaterial>
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination>
+        <corpname encodinganalog="110" source="local">State University of New York at Albany. Digital Media Department</corpname>
+      </origination>
+      <physdesc>
+        <extent unit="GB">12</extent>
+      </physdesc>
+      <physloc label="Storage:">The materials are located onsite in the department.</physloc>
+      <repository label="Repository:">
+        <corpname encodinganalog="610" source="local">M. E. Grenander Department of Special Collections and Archives, University at Albany, SUNY</corpname>
+      </repository>
+    </did>
+    <accessrestrict>
+      <head>Access</head>
+    </accessrestrict>
+    <userestrict><head>Copyright</head><p>Users are asked to provide attribution to Marc Schmidt, University Photographer, University at Albany, SUNY.</p><p>This page may contain links to digital objects. Access to these images and the technical capacity to download them does not imply permission for re-use. Digital objects may be used freely for personal reference use, referred to, or linked to from other web sites.</p><p>Researchers do not have permission to publish or disseminate material from these collections without permission from an archivist and/or the copyright holder.</p><p>The researcher assumes full responsibility for conforming to the laws of copyright. Some materials in these collections may be protected by the U.S. Copyright Law (Title 17, U.S.C.) and/or by the copyright or neighboring-rights laws of other nations. More information about U.S. Copyright is provided by the Copyright Office. Additionally, re-use may be restricted by terms of University Libraries gift or purchase agreements, donor restrictions, privacy and publicity rights, licensing and trademarks.</p><p>The University Archives are eager to hear from any copyright owners who are not properly identified so that appropriate information may be provided in the future.</p><p>Access to this collection is unrestricted.</p></userestrict>
+    <acqinfo>
+      <head>Acquisition Information</head>
+		<p>Most Items in this collection prior to 2012 were transferred to the University Libraries, M.E. Grenander Department of Special Collections and Archives by Mark Schmidt and Paul Miller of the Digital Media Department which is part of the Office of Communication and Marketing.</p>
+		<p>Most of the pre-2012 images were written to optical media (DVDs and some CD-Rs) by the University Photographer. Most of the images were raw camera files .NEF and .CR2 with altered derivatives created as JPG and a few TIFF files. Prior to accessioning, the archivist converted all raw camera images to JPG format and accepted only the original derivatives and the converted versions of files without derivatives.</p>
+		<p>Most of the images created after 2012 were downloaded <date normal="2015-07-19">2015 July 19</date></p>
+    </acqinfo>
+    <bioghist>
+      <head>Historical Note</head>
+      <p>The Digital Media Department is part of the Office of Communication and Marketing. They are charged with creating video and still images of the university and major events. Many of these items are created for marketing and other publications.</p>
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>This collection contains still photographs created digitally by the campus photographer.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a"><head>Arrangement of the Collection</head><p>Material from the UAlbanyPhotos website was maintained in its original arrangement. If items were moved the new arrangement was also maintained, so there is the potential for duplication.</p>
+		<p>Material that was transferred on optical media were matched by job number found in the top level directory. This job number was matched to a database maintained by the University Photographer which included basic descriptions, the ordering department, and timestamps. For Images from 2010-2012, a newer database was used that did not include descriptions. Descriptions for these items came from the directory names that held the images.</p>
+		<p>The images transferred on optical media were matched by the archivist to the arrangement provided by the UAlbanyPhotos website.</p></arrangement>
+    <prefercite>
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Identification of specific item, series, box, folder, Digital Media Department, 2002-2016. M.E. Grenander Department of Special Collections and Archives, University  Libraries, University at Albany, State University of New York (hereafter referred to as the Digital Media Department).</p>
+    </prefercite>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <corpname source="local" encodinganalog="610">State University of New York at Albany. Office of Communication and Marketing</corpname>
+      <subject source="meg" encodinganalog="650">Digital Records</subject>
+    </controlaccess>
+	<dsc/>
+  </archdesc>
+</ead>

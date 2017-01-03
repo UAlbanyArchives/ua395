@@ -1,0 +1,462 @@
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:18
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2311, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:21
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:28
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:31
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:35
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:37
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:41
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:45
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0913.JPG'
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:47
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0916.JPG'
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:49
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0918.jpg'
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:51
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:54
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:51:58
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:02
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:05
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:08
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0937.jpg'
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:09
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:11
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2307, in open
+    im = _open_core(fp, filename, prefix)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2297, in _open_core
+    im = factory(fp, filename)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 264, in _open
+    self.load()
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 267, in load
+    im = self.ico.getimage(self.size)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 150, in getimage
+    return self.frame(i)
+  File "C:\Python27\lib\site-packages\PIL\IcoImagePlugin.py", line 169, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "C:\Python27\lib\site-packages\PIL\ImageFile.py", line 97, in __init__
+    self._open()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 217, in _open
+    self._bitmap()
+  File "C:\Python27\lib\site-packages\PIL\BmpImagePlugin.py", line 123, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % file_info['header_size'])
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:14
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0945.jpg'
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:16
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0947.jpg'
+
+********************************************************************************************
+Image failed at 2016-07-29 00:52:16
+ID: a7fb15bb-def3-4ea0-935f-9d843ed3c1f3
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 314, in makeGallery
+    testImage = Image.open(image)
+  File "C:\Python27\lib\site-packages\PIL\Image.py", line 2317, in open
+    % (filename if filename else fp))
+IOError: cannot identify image file '\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP\\ua395-rCZhWxDaxgZPZ9bZYXiWLe\\data\\dvd_batch3\\Jim_Acker\\IMG_0948.jpg'

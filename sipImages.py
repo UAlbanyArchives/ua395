@@ -25,9 +25,9 @@ noDateCount = 0
 
 if os.name == "nt":
 	#imageDir = "C:\\Projects\\sipImages"
-	imageDir = "\\\\romeo\\SPE\\Electronic_Records_Library\\ua395\\fromDVDs2"
+	imageDir = "\\\\romeo\\SPE\\Electronic_Records_Library\\ua395\\fromDVDs4"
+	#baseDir = "C:\\Projects\\sipImages"
 	baseDir = "\\\\romeo\\SPE\\Electronic_Records_Library\\ua395"
-	#baseDir = "\\\\romeo\\SPE\\Electronic_Records_Library\\ua395"
 	descDir = "\\\\romeo\\Collect\\spe\\Greg\\Processing\\ua395"
 else:
 	imageDir = ""
@@ -51,7 +51,7 @@ Order2Input = ET.parse(os.path.join(descDir, "OrderEntry2.xml"), parser)
 OrderEntry = Order1Input.getroot()
 OrderEntry2 = Order2Input.getroot()
 
-workingDir = os.path.join(baseDir, "dvd_batch2")
+workingDir = os.path.join(baseDir, "dvd_batch4")
 if not os.path.isdir(workingDir):
 	os.mkdir(workingDir)
 #make SIP metadata file
@@ -103,7 +103,7 @@ for diskImage in os.listdir(imageDir):
 	#if count > 0:
 	if not os.path.isdir(os.path.join(imageDir, diskImage)):
 		pass
-	elif diskImage == "dvd_batch1":
+	elif diskImage == "dvd_batch4":
 		pass
 	else:
 		print "reading " + diskImage
@@ -129,62 +129,63 @@ for diskImage in os.listdir(imageDir):
 			recordEventsXML = ET.SubElement(jobRecord, "recordEvents")
 			
 			
-			if job.isdigit():
-				if job.startswith("200"):					
+			if job.isdigit() and job.startswith("200"):		
 					
-					for order in OrderEntry:
+				for order in OrderEntry:
+					if order.tag == "OrderEntry":
+						if order.find("Job_x0020_Number").text == job:
+							match = order
+							
+				if match is None:
+					for order in OrderEntry2:
 						if order.tag == "OrderEntry":
 							if order.find("Job_x0020_Number").text == job:
 								match = order
-								
-					if match is None:
-						for order in OrderEntry2:
-							if order.tag == "OrderEntry":
-								if order.find("Job_x0020_Number").text == job:
-									match = order
-					
-					if match is None:
-						print "NO MATCH FOR: " + str(job)
-					else:
-						description = match.find("Description").text.replace("\n", " ")
-						description = " ".join(description.split())
-						if "photo session:" in description:
-							description = description.replace("photo session:", "").strip()
-							
-						elif "photo session" in description:
-							description = description.replace("photo session", "").strip()
-						depart = match.find("Department").text
+				
+				if match is None:
+					print "NO MATCH FOR: " + str(job)
+				else:
+					description = match.find("Description").text.replace("\n", " ")
+					description = " ".join(description.split())
+					if "photo session:" in description:
+						description = description.replace("photo session:", "").strip()
 						
-						if "****" in description:
-							description = description.split("****")[0]
-								
-					if match.find("DateDue") is None:
-						if match.find("Date") is None:
-							print "DATE ERROR______________________________________________"
-						else:
-							dbDate = match.find("Date").text
+					elif "photo session" in description:
+						description = description.replace("photo session", "").strip()
+					if not match.find("Department") is None and match.find("Department").text:
+						departCheck = True
+						depart = match.find("Department").text
 					else:
-						dbDate = match.find("DateDue").text
+						departCheck = False
 					
-					jobRecord.set("name", job)
+					if "****" in description:
+						description = description.split("****")[0]
+							
+				if match.find("DateDue") is None:
+					if match.find("Date") is None:
+						print "DATE ERROR______________________________________________"
+					else:
+						dbDate = match.find("Date").text
+				else:
+					dbDate = match.find("DateDue").text
+				
+				jobRecord.set("name", job)
+				if departCheck == True:
 					descriptionXML.text = depart + ": " + description.strip()
-					timestamp = ET.Element("timestamp")
-					timestamp.text = dbDate.replace("T", " ")
-					timestamp.set("timeType", "iso8601")
-					timestamp.set("parser", "Database Entry")
-					recordEventsXML.append(timestamp)			
-					eventXML = ET.SubElement(curatorialEventsXML, "event")
-					eventXML.set("timestamp", str(time.time()))
-					eventXML.set("timestampHuman", str(time.strftime("%Y-%m-%d %H:%M:%S")))
-					eventXML.text = "description record extracted from photographer's Microsoft Access database by Job number"
+				else:
+					descriptionXML.text = description.strip()
+				timestamp = ET.Element("timestamp")
+				timestamp.text = dbDate.replace("T", " ")
+				timestamp.set("timeType", "iso8601")
+				timestamp.set("parser", "Database Entry")
+				recordEventsXML.append(timestamp)			
+				eventXML = ET.SubElement(curatorialEventsXML, "event")
+				eventXML.set("timestamp", str(time.time()))
+				eventXML.set("timestampHuman", str(time.strftime("%Y-%m-%d %H:%M:%S")))
+				eventXML.text = "description record extracted from photographer's Microsoft Access database by Job number"
 					
 					
 										
-				else:
-					print "No entry: " + str(job)
-					with open("jobError.txt", "a") as f:
-						f.write( "\n\n*******************************\nNO ENTRY: " + str(job) + "\nDisk: " + diskImage)
-						f.close()
 			else:
 				"""
 				print "Job error: " + str(job)
@@ -192,8 +193,13 @@ for diskImage in os.listdir(imageDir):
 					f.write( "\n\n*******************************\nJob error: " + str(job) + "\nDisk: " + diskImage)
 					f.close()
 				"""
-				jobRecord.set("name", job)
-				descriptionXML.text = job
+				try:
+					jobDesc = os.listdir(os.path.join(imageDir, diskImage, job))[0]
+				except:
+					print "no subpath for " + job
+					jobDesc = job
+				jobRecord.set("name", jobDesc)
+				descriptionXML.text = jobDesc
 				eventXML = ET.SubElement(curatorialEventsXML, "event")
 				eventXML.set("timestamp", str(time.time()))
 				eventXML.set("timestampHuman", str(time.strftime("%Y-%m-%d %H:%M:%S")))
@@ -271,7 +277,10 @@ for diskImage in os.listdir(imageDir):
 							
 						jobRecord.append(imageRecord)
 						
-						shutil.copy2(os.path.join(root, file), jobDir)
+						if os.path.isfile(os.path.join(jobDir, file)):
+							pass
+						else:
+							shutil.copy2(os.path.join(root, file), jobDir)
 					
 			sipRoot.append(jobRecord)
 

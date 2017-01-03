@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ead id="nam_ua395">
+  <eadheader audience="external" countryencoding="iso3166-1" dateencoding="iso8601" findaidstatus="new" langencoding="iso639-2b" relatedencoding="DC" repositoryencoding="iso15511" scriptencoding="iso15924">
+    <eadid countrycode="US" identifier="##" mainagencycode="nalsu" url="http://library.albany.edu/speccoll/findaids/eresources/findingaids/ua395.html">nam_ua395</eadid>
+    <filedesc>
+      <titlestmt>
+        <titleproper>DIGITAL MEDIA DEPARTMENT COLLECTION (UA395)<date normal="2002/2016" type="inclusive">2002-2016</date></titleproper>
+        <author>Gregory Wiedeman</author>
+      </titlestmt>
+      <publicationstmt>
+        <publisher>M. E. Grenander Department of Special Collections and Archives</publisher>
+        <address>
+          <addressline>1400 Washington Avenue / Albany, New York 12222</addressline>
+        </address>
+        <date normal="2016" type="publication">Copyright 2016 By the University at Albany, SUNY. All rights reserved.</date>
+      </publicationstmt>
+    </filedesc>
+    <profiledesc>
+      <creation>Gregory Wiedeman<date normal="2016-07-22">2016 July 22</date></creation>
+      <langusage>
+        <language encodinganalog="Language" langcode="eng">English</language>
+      </langusage>
+    </profiledesc>
+  </eadheader>
+  <frontmatter>
+    <titlepage>
+      <titleproper>Digital Media Department Collection<date normal="2002/2016" type="inclusive">2002-2016</date></titleproper>
+      <publisher/>
+      <date type="publication">Copyright 2016 By the University at Albany, SUNY. All rights reserved.</date>
+      <p>For reference queries contact Grenander Department Reference staff or (518)-437-3934</p>
+    </titlepage>
+  </frontmatter>
+  <archdesc level="collection">
+    <did>
+      <head>Descriptive Summary</head>
+      <unitid>nam_ua395</unitid>
+      <unittitle>Digital Media Department<unitdate label="Date:" normal="2002/2016" type="inclusive">2002-2016</unitdate></unittitle>
+      <abstract label="Abstract:">Digital photography that documents the University at Albany, SUNY.</abstract>
+      <langmaterial>
+        <language langcode="eng">English</language>
+      </langmaterial>
+      <origination>
+        <corpname encodinganalog="110" source="local">State University of New York at Albany. Digital Media Department</corpname>
+      </origination>
+      <physdesc>
+        <extent unit="GB">12</extent>
+      </physdesc>
+      <physloc label="Storage:">The materials are located onsite in the department.</physloc>
+      <repository label="Repository:">
+        <corpname encodinganalog="610" source="local">M. E. Grenander Department of Special Collections and Archives, University at Albany, SUNY</corpname>
+      </repository>
+    </did>
+    <accessrestrict>
+      <head>Access</head>
+    </accessrestrict>
+    <userestrict>
+      <head>Copyright</head>
+      <p>Users are asked to provide attribution to Marc Schmidt, University Photographer, University at Albany, SUNY.</p>
+      <p>This page may contain links to digital objects. Access to these images and the technical capacity to download them does not imply permission for re-use. Digital objects may be used freely for personal reference use, referred to, or linked to from other web sites.</p>
+      <p>Researchers do not have permission to publish or disseminate material from these collections without permission from an archivist and/or the copyright holder.</p>
+      <p>The researcher assumes full responsibility for conforming to the laws of copyright. Some materials in these collections may be protected by the U.S. Copyright Law (Title 17, U.S.C.) and/or by the copyright or neighboring-rights laws of other nations. More information about U.S. Copyright is provided by the Copyright Office. Additionally, re-use may be restricted by terms of University Libraries gift or purchase agreements, donor restrictions, privacy and publicity rights, licensing and trademarks.</p>
+      <p>The University Archives are eager to hear from any copyright owners who are not properly identified so that appropriate information may be provided in the future.</p>
+      <p>Access to this collection is unrestricted.</p>
+    </userestrict>
+    <acqinfo>
+      <head>Acquisition Information</head>
+      <p>Most Items in this collection prior to 2012 were transferred to the University Libraries, M.E. Grenander Department of Special Collections and Archives by Mark Schmidt and Paul Miller of the Digital Media Department which is part of the Office of Communication and Marketing.</p>
+      <p>Most of the pre-2012 images were written to optical media (DVDs and some CD-Rs) by the University Photographer. Most of the images were raw camera files .NEF and .CR2 with altered derivatives created as JPG and a few TIFF files. Prior to accessioning, the archivist converted all raw camera images to JPG format and accepted only the original derivatives and the converted versions of files without derivatives.</p>
+      <p>Most of the images created after 2012 were downloaded <date normal="2015-07-19">2015 July 19</date></p>
+    </acqinfo>
+    <bioghist>
+      <head>Historical Note</head>
+      <p>The Digital Media Department is part of the Office of Communication and Marketing. They are charged with creating video and still images of the university and major events. Many of these items are created for marketing and other publications.</p>
+    </bioghist>
+    <scopecontent>
+      <head>Scope and Content Information</head>
+      <p>This collection contains still photographs created digitally by the campus photographer.</p>
+    </scopecontent>
+    <arrangement encodinganalog="351$a">
+      <head>Arrangement of the Collection</head>
+      <p>Material from the UAlbanyPhotos website was maintained in its original arrangement. If items were moved the new arrangement was also maintained, so there is the potential for duplication.</p>
+      <p>Material that was transferred on optical media were matched by job number found in the top level directory. This job number was matched to a database maintained by the University Photographer which included basic descriptions, the ordering department, and timestamps. For Images from 2010-2012, a newer database was used that did not include descriptions. Descriptions for these items came from the directory names that held the images.</p>
+      <p>The images transferred on optical media were matched by the archivist to the arrangement provided by the UAlbanyPhotos website.</p>
+    </arrangement>
+    <prefercite>
+      <head>Preferred Citation</head>
+      <p>Preferred citation for this material is as follows:</p>
+      <p>Identification of specific item, series, box, folder, Digital Media Department, 2002-2016. M.E. Grenander Department of Special Collections and Archives, University  Libraries, University at Albany, State University of New York (hereafter referred to as the Digital Media Department).</p>
+    </prefercite>
+    <controlaccess>
+      <head>Subject and Genre Headings</head>
+      <corpname source="local" encodinganalog="610">State University of New York at Albany. Office of Communication and Marketing</corpname>
+      <subject source="meg" encodinganalog="650">Digital Records</subject>
+    </controlaccess>
+    <dsc>
+      <c01 id="nam_ua395-1" level="series">
+        <did>
+          <unitid>1</unitid>
+          <unittitle label="Series">Academics</unittitle>
+          <unitdate normal="2007-12-05/2016-07-17">2007 December 5-2016 July 17</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">4367</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-1.1" level="subseries">
+          <did>
+            <unitid>1.1</unitid>
+            <unittitle label="Subseries">Academics</unittitle>
+            <unitdate normal="2007-12-05/2016-07-17">2007 December 5-2016 July 17</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">4367</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.2" level="subseries">
+          <did>
+            <unitid>1.2</unitid>
+            <unittitle label="Subseries">Center for Technology in Gover</unittitle>
+            <unitdate normal="2014-07-15/2016-03-04">2014 July 15-2016 March 4</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">92</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.3" level="subseries">
+          <did>
+            <unitid>1.3</unitid>
+            <unittitle label="Subseries">College of Arts and Sciences</unittitle>
+            <unitdate normal="2008-01-16/2016-06-30">2008 January 16-2016 June 30</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">1315</dimensions>
+            </physdesc>
+          </did>
+          <c03 id="nam_ua395-1.3.1">
+            <did>
+              <unitid>1.3.1</unitid>
+              <unittitle label="Subseries">College of Arts and Sciences</unittitle>
+              <unitdate normal="2008-01-16/2016-06-30">2008 January 16-2016 June 30</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">1315</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="nam_ua395-1.3.2">
+            <did>
+              <unitid>1.3.2</unitid>
+              <unittitle label="Subseries">Department of Atmospheric and</unittitle>
+              <unitdate normal="2008-04-29/2015-12-21">2008 April 29-2015 December 21</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">202</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="nam_ua395-1.3.3">
+            <did>
+              <unitid>1.3.3</unitid>
+              <unittitle label="Subseries">Geography and Planning</unittitle>
+              <unitdate normal="2016-06-29/2016-06-30">2016 June 29-2016 June 30</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">42</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="nam_ua395-1.3.4">
+            <did>
+              <unitid>1.3.4</unitid>
+              <unittitle label="Subseries">The RNA Institute</unittitle>
+              <unitdate normal="2010-04-08/2016-04-25">2010 April 8-2016 April 25</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">480</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="nam_ua395-1.4" level="subseries">
+          <did>
+            <unitid>1.4</unitid>
+            <unittitle label="Subseries">College of Computing Informati</unittitle>
+            <unitdate normal="2014-04-10/2016-03-25">2014 April 10-2016 March 25</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">694</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.5" level="subseries">
+          <did>
+            <unitid>1.5</unitid>
+            <unittitle label="Subseries">College of Emergency Preparedn</unittitle>
+            <unitdate normal="2016-01-06/2016-07-17">2016 January 6-2016 July 17</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">200</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+		<c02 id="nam_ua395-1.6" level="subseries">
+          <did>
+            <unitid>1.6</unitid>
+            <unittitle label="Subseries">College of Nanoscale Science and Engineering</unittitle>
+            <unitdate normal="2012-10-24/2015-01-14">2012 October 24-2015 January 14</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">124</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.7" level="subseries">
+          <did>
+            <unitid>1.7</unitid>
+            <unittitle label="Subseries">Division of Research</unittitle>
+            <unitdate normal="2012-10-24/2015-01-14">2012 October 24-2015 January 14</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">124</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.8" level="subseries">
+          <did>
+            <unitid>1.8</unitid>
+            <unittitle label="Subseries">Library</unittitle>
+            <unitdate normal="2008-04-29/2014-08-22">2008 April 29-2014 August 22</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">74</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.9" level="subseries">
+          <did>
+            <unitid>1.9</unitid>
+            <unittitle label="Subseries">Rockefeller College</unittitle>
+            <unitdate normal="2014-02-04/2016-06-03">2014 February 4-2016 June 3</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">462</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.10" level="subseries">
+          <did>
+            <unitid>1.10</unitid>
+            <unittitle label="Subseries">School of Business</unittitle>
+            <unitdate normal="2008-10-16/2015-09-11">2008 October 16-2015 September 11</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">438</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-1.11" level="subseries">
+          <did>
+            <unitid>1.11</unitid>
+            <unittitle label="Subseries">School of Social Welfare</unittitle>
+            <unitdate normal="2013-10-29/2013-10-29">2013 October 29-2013 October 29</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">40</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-2" level="series">
+        <did>
+          <unitid>2</unitid>
+          <unittitle label="Series">Administration</unittitle>
+          <unitdate normal="2012-09-21/2015-11-25">2012 September 21-2015 November 25</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">970</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-2.1" level="subseries">
+          <did>
+            <unitid>2.1</unitid>
+            <unittitle label="Subseries">Administration</unittitle>
+            <unitdate normal="2012-09-21/2015-11-25">2012 September 21-2015 November 25</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">970</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-2.2" level="subseries">
+          <did>
+            <unitid>2.2</unitid>
+            <unittitle label="Subseries">Presidents</unittitle>
+            <unitdate normal="2012-09-21/2015-11-25">2012 September 21-2015 November 25</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">786</dimensions>
+            </physdesc>
+          </did>
+          <c03 id="nam_ua395-2.2.1">
+            <did>
+              <unitid>2.2.1</unitid>
+              <unittitle label="Subseries">Dr Robert J Jones</unittitle>
+              <unitdate normal="2012-09-21/2015-11-25">2012 September 21-2015 November 25</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">786</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-3" level="series">
+        <did>
+          <unitid>3</unitid>
+          <unittitle label="Series">Athletics</unittitle>
+          <unitdate normal="2004-10-10/2016-04-22">2004 October 10-2016 April 22</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">3350</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-3.1" level="subseries">
+          <did>
+            <unitid>3.1</unitid>
+            <unittitle label="Subseries">Athletics</unittitle>
+            <unitdate normal="2004-10-10/2016-04-22">2004 October 10-2016 April 22</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">3350</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.2" level="subseries">
+          <did>
+            <unitid>3.2</unitid>
+            <unittitle label="Subseries">Athletics Portraits</unittitle>
+            <unitdate normal="2014-03-03/2014-12-12">2014 March 3-2014 December 12</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">132</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.3" level="subseries">
+          <did>
+            <unitid>3.3</unitid>
+            <unittitle label="Subseries">Baseball</unittitle>
+            <unitdate normal="2013-09-06/2013-09-09">2013 September 6-2013 September 9</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">56</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.4" level="subseries">
+          <did>
+            <unitid>3.4</unitid>
+            <unittitle label="Subseries">Field Hockey</unittitle>
+            <unitdate normal="2013-10-18/2013-11-19">2013 October 18-2013 November 19</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">40</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.5" level="subseries">
+          <did>
+            <unitid>3.5</unitid>
+            <unittitle label="Subseries">Football</unittitle>
+            <unitdate normal="2012-04-06/2015-09-14">2012 April 6-2015 September 14</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">802</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.6" level="subseries">
+          <did>
+            <unitid>3.6</unitid>
+            <unittitle label="Subseries">Mens Basketball</unittitle>
+            <unitdate normal="2015-02-20/2015-12-22">2015 February 20-2015 December 22</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">560</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.7" level="subseries">
+          <did>
+            <unitid>3.7</unitid>
+            <unittitle label="Subseries">Mens Lacrosse</unittitle>
+            <unitdate normal="2012-07-08/2016-04-18">2012 July 8-2016 April 18</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">714</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.8" level="subseries">
+          <did>
+            <unitid>3.8</unitid>
+            <unittitle label="Subseries">Track</unittitle>
+            <unitdate normal="2012-04-26/2015-04-20">2012 April 26-2015 April 20</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">88</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.9" level="subseries">
+          <did>
+            <unitid>3.9</unitid>
+            <unittitle label="Subseries">Womens Basketball Team</unittitle>
+            <unitdate normal="2012-03-10/2016-04-22">2012 March 10-2016 April 22</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">448</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-3.10" level="subseries">
+          <did>
+            <unitid>3.10</unitid>
+            <unittitle label="Subseries">Womens Lacrosse</unittitle>
+            <unitdate normal="2016-04-16/2016-04-18">2016 April 16-2016 April 18</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">194</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-4" level="series">
+        <did>
+          <unitid>4</unitid>
+          <unittitle label="Series">Campus</unittitle>
+          <unitdate normal="2005-09-23/2016-07-15">2005 September 23-2016 July 15</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">1621</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-4.1" level="subseries">
+          <did>
+            <unitid>4.1</unitid>
+            <unittitle label="Subseries">Aerials</unittitle>
+            <unitdate normal="2012-02-14/2016-06-28">2012 February 14-2016 June 28</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">186</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-4.2" level="subseries">
+          <did>
+            <unitid>4.2</unitid>
+            <unittitle label="Subseries">Architecture</unittitle>
+            <unitdate normal="2009-05-27/2016-04-25">2009 May 27-2016 April 25</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">296</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-4.3" level="subseries">
+          <did>
+            <unitid>4.3</unitid>
+            <unittitle label="Subseries">Campus</unittitle>
+            <unitdate normal="2005-09-23/2016-07-15">2005 September 23-2016 July 15</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">1621</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-4.4" level="subseries">
+          <did>
+            <unitid>4.4</unitid>
+            <unittitle label="Subseries">East Campus</unittitle>
+            <unitdate normal="2005-10-29/2014-07-08">2005 October 29-2014 July 8</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">160</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-4.5" level="subseries">
+          <did>
+            <unitid>4.5</unitid>
+            <unittitle label="Subseries">Nano Campus</unittitle>
+            <unitdate normal="2006-08-03/2014-06-03">2006 August 3-2014 June 3</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">55</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-4.6" level="subseries">
+          <did>
+            <unitid>4.6</unitid>
+            <unittitle label="Subseries">University Art Museum</unittitle>
+            <unitdate normal="2005-09-23/2015-04-29">2005 September 23-2015 April 29</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">62</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-5" level="series">
+        <did>
+          <unitid>5</unitid>
+          <unittitle label="Series">CommunityEngagement</unittitle>
+          <unitdate normal="2012-11-14/2016-07-13">2012 November 14-2016 July 13</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">1320</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-5.1" level="subseries">
+          <did>
+            <unitid>5.1</unitid>
+            <unittitle label="Subseries">CommunityEngagement</unittitle>
+            <unitdate normal="2012-11-14/2016-07-13">2012 November 14-2016 July 13</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">1320</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-5.2" level="subseries">
+          <did>
+            <unitid>5.2</unitid>
+            <unittitle label="Subseries">University Police Department</unittitle>
+            <unitdate normal="2012-11-14/2016-01-17">2012 November 14-2016 January 17</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">212</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-6" level="series">
+        <did>
+          <unitid>6</unitid>
+          <unittitle label="Series">Events</unittitle>
+          <unitdate normal="2009-05-16/2016-07-14">2009 May 16-2016 July 14</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">22929</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-6.1" level="subseries">
+          <did>
+            <unitid>6.1</unitid>
+            <unittitle label="Subseries">Events</unittitle>
+            <unitdate normal="2009-05-16/2016-07-14">2009 May 16-2016 July 14</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">22929</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-6.2" level="subseries">
+          <did>
+            <unitid>6.2</unitid>
+            <unittitle label="Subseries">2015 Welcome Week Events</unittitle>
+            <unitdate normal="2015-08-21/2015-09-26">2015 August 21-2015 September 26</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">844</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-6.3" level="subseries">
+          <did>
+            <unitid>6.3</unitid>
+            <unittitle label="Subseries">Commencement</unittitle>
+            <unitdate normal="2009-05-16/2016-06-16">2009 May 16-2016 June 16</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">3036</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-6.4" level="subseries">
+          <did>
+            <unitid>6.4</unitid>
+            <unittitle label="Subseries">Homecomings</unittitle>
+            <unitdate normal="2013-10-19/2015-11-17">2013 October 19-2015 November 17</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">966</dimensions>
+            </physdesc>
+          </did>
+          <c03 id="nam_ua395-6.4.1">
+            <did>
+              <unitid>6.4.1</unitid>
+              <unittitle label="Subseries">Homecomings</unittitle>
+              <unitdate normal="2013-10-19/2015-11-17">2013 October 19-2015 November 17</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">966</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="nam_ua395-6.4.2">
+            <did>
+              <unitid>6.4.2</unitid>
+              <unittitle label="Subseries">2015 Homecoming</unittitle>
+              <unitdate normal="2015-10-09/2015-11-17">2015 October 9-2015 November 17</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">710</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-7" level="series">
+        <did>
+          <unitid>7</unitid>
+          <unittitle label="Series">Portraits</unittitle>
+          <unitdate normal="2006-06-01/2016-07-15">2006 June 1-2016 July 15</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">1296</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-7.1" level="subseries">
+          <did>
+            <unitid>7.1</unitid>
+            <unittitle label="Subseries">Portraits</unittitle>
+            <unitdate normal="2006-06-01/2016-07-15">2006 June 1-2016 July 15</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">1296</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-7.2" level="subseries">
+          <did>
+            <unitid>7.2</unitid>
+            <unittitle label="Subseries">Faculty Staff</unittitle>
+            <unitdate normal="2006-06-01/2016-07-06">2006 June 1-2016 July 6</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">758</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-7.3" level="subseries">
+          <did>
+            <unitid>7.3</unitid>
+            <unittitle label="Subseries">Students</unittitle>
+            <unitdate normal="2014-05-08/2016-07-15">2014 May 8-2016 July 15</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">96</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-7.4" level="subseries">
+          <did>
+            <unitid>7.4</unitid>
+            <unittitle label="Subseries">UAlbany Alumni</unittitle>
+            <unitdate normal="2011-12-20/2016-06-13">2011 December 20-2016 June 13</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">78</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+      <c01 id="nam_ua395-8" level="series">
+        <did>
+          <unitid>8</unitid>
+          <unittitle label="Series">StudentLife</unittitle>
+          <unitdate normal="2005-11-02/2016-06-18">2005 November 2-2016 June 18</unitdate>
+          <physdesc>
+            <dimensions unit="Digital Files">3043</dimensions>
+          </physdesc>
+        </did>
+        <c02 id="nam_ua395-8.1" level="subseries">
+          <did>
+            <unitid>8.1</unitid>
+            <unittitle label="Subseries">StudentLife</unittitle>
+            <unitdate normal="2005-11-02/2016-06-18">2005 November 2-2016 June 18</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">3043</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-8.2" level="subseries">
+          <did>
+            <unitid>8.2</unitid>
+            <unittitle label="Subseries">Residential Life</unittitle>
+            <unitdate normal="2012-08-23/2016-01-23">2012 August 23-2016 January 23</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">646</dimensions>
+            </physdesc>
+          </did>
+          <c03 id="nam_ua395-8.2.1">
+            <did>
+              <unitid>8.2.1</unitid>
+              <unittitle label="Subseries">Residential Life</unittitle>
+              <unitdate normal="2012-08-23/2016-01-23">2012 August 23-2016 January 23</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">646</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+          <c03 id="nam_ua395-8.2.2">
+            <did>
+              <unitid>8.2.2</unitid>
+              <unittitle label="Subseries">Dorms</unittitle>
+              <unitdate normal="2014-04-29/2014-12-19">2014 April 29-2014 December 19</unitdate>
+              <physdesc>
+                <dimensions unit="Digital Files">206</dimensions>
+              </physdesc>
+            </did>
+          </c03>
+        </c02>
+        <c02 id="nam_ua395-8.3" level="subseries">
+          <did>
+            <unitid>8.3</unitid>
+            <unittitle label="Subseries">Student Groups</unittitle>
+            <unitdate normal="2012-12-15/2015-12-14">2012 December 15-2015 December 14</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">28</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-8.4" level="subseries">
+          <did>
+            <unitid>8.4</unitid>
+            <unittitle label="Subseries">Summer Opportunties</unittitle>
+            <unitdate normal="2011-06-26/2015-08-19">2011 June 26-2015 August 19</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">312</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-8.5" level="subseries">
+          <did>
+            <unitid>8.5</unitid>
+            <unittitle label="Subseries">Traditions</unittitle>
+            <unitdate normal="2013-08-22/2016-06-18">2013 August 22-2016 June 18</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">528</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+        <c02 id="nam_ua395-8.6" level="subseries">
+          <did>
+            <unitid>8.6</unitid>
+            <unittitle label="Subseries">Year In Review</unittitle>
+            <unitdate normal="2012-08-09/2013-10-28">2012 August 9-2013 October 28</unitdate>
+            <physdesc>
+              <dimensions unit="Digital Files">63</dimensions>
+            </physdesc>
+          </did>
+        </c02>
+      </c01>
+    </dsc>
+  </archdesc>
+</ead>

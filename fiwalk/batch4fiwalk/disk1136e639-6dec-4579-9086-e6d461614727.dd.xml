@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml 
+  xmlns='http://www.forensicswiki.org/wiki/Category:Digital_Forensics_XML'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  version='1.0'>
+  <metadata>
+    <dc:type>Disk Image</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>fiwalk</program>
+    <version>4.3.0</version>
+    <build_environment>
+      <compiler>GCC 4.8</compiler>
+      <library name="afflib" version="3.7.7"/>
+      <library name="libewf" version="20140608"/>
+    </build_environment>
+    <execution_environment>
+      <command_line>fiwalk -z -X /media/bcadmin/Collect/spe/Greg/Processing/ua395/fiwalk/batch4fiwalk/disk1136e639-6dec-4579-9086-e6d461614727.dd.xml /media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages_b4/disk1136e639-6dec-4579-9086-e6d461614727.dd</command_line>
+      <start_time>2016-08-01T14:18:59Z</start_time>
+    </execution_environment>
+  </creator>
+  <source>
+    <image_filename>/media/bcadmin/SPE/Electronic_Records_Library/ua395/dvdImages_b4/disk1136e639-6dec-4579-9086-e6d461614727.dd</image_filename>
+  </source>
+<!-- fs start: 0 -->
+  <volume offset='0'>
+    <partition_offset>0</partition_offset>
+    <block_size>2048</block_size>
+    <ftype>2048</ftype>
+    <ftype_str>iso9660</ftype_str>
+    <block_count>593773</block_count>
+    <first_block>0</first_block>
+    <last_block>593772</last_block>
+    <fileobject>
+      <filename>.</filename>
+      <partition>1</partition>
+      <id>1</id>
+      <name_type>d</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <crtime>2007-01-19T17:56:13Z</crtime>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='135168' img_offset='135168' len='2048'/>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <filename>..</filename>
+      <partition>1</partition>
+      <id>2</id>
+      <name_type>d</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <crtime>2007-01-19T17:56:13Z</crtime>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='135168' img_offset='135168' len='2048'/>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <filename>20004603</filename>
+      <partition>1</partition>
+      <id>3</id>
+      <name_type>d</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>1</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <crtime>2006-11-15T20:08:02Z</crtime>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='137216' img_offset='137216' len='2048'/>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <parent_object>
+        <inode>1</inode>
+      </parent_object>
+      <filename>20004603/.</filename>
+      <partition>1</partition>
+      <id>4</id>
+      <name_type>d</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>1</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <crtime>2006-11-15T20:08:02Z</crtime>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='137216' img_offset='137216' len='2048'/>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <parent_object>
+        <inode>1</inode>
+      </parent_object>
+      <filename>20004603/..</filename>
+      <partition>1</partition>
+      <id>5</id>
+      <name_type>d</name_type>
+      <filesize>2048</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>0</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+      <crtime>2007-01-19T17:56:13Z</crtime>
+      <byte_runs>
+       <byte_run file_offset='0' fs_offset='135168' img_offset='135168' len='2048'/>
+      </byte_runs>
+    </fileobject>
+    <fileobject>
+      <filename>$OrphanFiles</filename>
+      <partition>1</partition>
+      <id>6</id>
+      <name_type>d</name_type>
+      <filesize>0</filesize>
+      <alloc>1</alloc>
+      <used>1</used>
+      <inode>207</inode>
+      <meta_type>2</meta_type>
+      <mode>0</mode>
+      <nlink>1</nlink>
+      <uid>0</uid>
+      <gid>0</gid>
+    </fileobject>
+  </volume>
+<!-- end of volume -->
+<!-- clock: 0.300345 -->
+  <rusage>
+    <utime>0.000000</utime>
+    <stime>0.004000</stime>
+    <maxrss>6052</maxrss>
+    <minflt>551</minflt>
+    <majflt>0</majflt>
+    <nswap>0</nswap>
+    <inblock>0</inblock>
+    <oublock>16</oublock>
+    <clocktime>0.300345</clocktime>
+<!-- stop_time: Mon Aug  1 10:19:00 2016 -->
+  </rusage>
+</dfxml>

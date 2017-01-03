@@ -1,0 +1,53 @@
+Academics/Academics
+Academics/Center for Technology in Gover
+Academics/College of Arts and Sciences/Department of Atmospheric and
+Academics/College of Arts and Sciences/Geography and Planning
+Academics/College of Arts and Sciences/The RNA Institute
+Academics/College of Arts and Sciences/College of Arts and Sciences
+Academics/College of Computing Informati
+Academics/College of Emergency Preparedn
+Academics/College of Nanoscale Science and Engineering
+Academics/Division of Research
+Academics/Library
+Academics/Rockefeller College
+Academics/School of Business
+Academics/School of Social Welfare
+Administration/Administration
+Administration/Presidents/Dr Robert J Jones
+Administration/Presidents/Presidents
+Athletics/Athletics
+Athletics/Athletics Portraits
+Athletics/Baseball
+Athletics/Field Hockey
+Athletics/Football
+Athletics/Mens Basketball
+Athletics/Mens Lacrosse
+Athletics/Track
+Athletics/Womens Basketball Team
+Athletics/Womens Lacrosse
+Campus/Aerials
+Campus/Architecture
+Campus/Campus
+Campus/East Campus
+Campus/Nano Campus
+Campus/University Art Museum
+CommunityEngagement/CommunityEngagement
+CommunityEngagement/University Police Department
+Events/Events
+Events/2015 Welcome Week Events
+Events/Commencement
+Events/Homecomings/2015 Homecoming
+Events/Homecomings/Homecomings
+Portraits/Portraits
+Portraits/Faculty Staff
+Portraits/Students
+Portraits/UAlbany Alumni
+StudentLife/StudentLife
+StudentLife/Residential Life/Dorms
+StudentLife/Residential Life/Residential Life
+StudentLife/Student Groups
+StudentLife/Summer Opportunties
+StudentLife/Traditions
+StudentLife/Year In Review
+
+
