@@ -65,11 +65,16 @@ try:
 			for chunk in iter(lambda: f.read(4096), b""):
 				hash_md5.update(chunk)
 		return hash_md5.hexdigest()
+		
+	keyFile = blockedFile = open("key.txt", "r")
+	line1 = keyFile.readline().split("\n")[0]
+	keyString = line1.split("Key: ")[1].strip()
+	keyFile.close()
 
 	#url = "http://www.smugmug.com/api/v2/user/ualbanyphotos"
-	#url = "http://www.smugmug.com/api/v2/user/ualbanyphotos?APIKey=yOoGBuxh2vLhQzmESiDk1qrqVsVBICUZ"
-	#url = "http://www.smugmug.com/api/v2/user/ualbanyphotos!albums?start=1&count=99999999?APIKey=yOoGBuxh2vLhQzmESiDk1qrqVsVBICUZ"
-	url = "http://www.smugmug.com/api/v2/user/ualbanyphotos!albums?start=1&count=99999&APIKey=yOoGBuxh2vLhQzmESiDk1qrqVsVBICUZ"
+	#url = "http://www.smugmug.com/api/v2/user/ualbanyphotos?APIKey=keyString"
+	#url = "http://www.smugmug.com/api/v2/user/ualbanyphotos!albums?start=1&count=99999999?APIKey=keyString"
+	url = "http://www.smugmug.com/api/v2/user/ualbanyphotos!albums?start=1&count=99999&APIKey=keyString"
 	parser = ET.XMLParser(remove_blank_text=True)
 
 	headers = {
