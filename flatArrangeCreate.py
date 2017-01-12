@@ -13,17 +13,21 @@ import urllib
 from subprocess import Popen, PIPE
 from PIL import Image
 
+from archives_tools import dacs
+
+
+bagDir = os.path.dirname(os.path.realpath(__file__))
+processingDir = os.path.dirname(os.path.realpath(__file__))
+eadFile = os.path.join(processingDir, "ua395-frame.xml")
 
 if os.name == "nt":
-	bagDir = "\\\\romeo\\Collect\\spe\\Greg\\Processing\\ua395"
-	processingDir = "\\\\romeo\\Collect\\spe\\Greg\\Processing\\ua395"
-	eadFile = "\\\\romeo\\Collect\\spe\\Greg\\Processing\\ua395\ua395-frame.xml"
 	templateFile = "\\\\romeo\\wwwroot\\eresources\\digital_objects\\ua395\\template.html"
 	sipDir = "\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP"
 	dipDir = "\\\\romeo\\wwwroot\\eresources\\digital_objects\\ua395"
 else:
-	bagDir = ""
-	processingDir = ""
+	templateFile = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395/template.html"
+	sipDir = "/media/bcadmin/Lincoln/Special Collections/accessions/SIP"
+	dipDir = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395"
 	
 print sys.getfilesystemencoding()
 
@@ -38,66 +42,7 @@ def sizeof_fmt(num, suffix='B'):
 			return "%3.1f%s%s" % (num, unit, suffix)
 		num /= 1024.0
 	return "%.1f%s%s" % (num, 'Yi', suffix)
-	
-def dacsFromNormal(normalDate):
-	calendar = {'01': 'January', '02': 'February', '03': 'March', '04': 'April', '05': 'May', '06': 'June', '07': 'July', '08': 'August', '09': 'September', '10': 'October', '11': 'November', '12': 'December'}
-	if len(normalDate) < 1:
-		displayDate = normalDate
-	if "/" in normalDate:
-		startDate = normalDate.split('/')[0]
-		endDate = normalDate.split('/')[1]
-		if "-" in startDate:
-			if startDate.count('-') == 1:
-				startYear = startDate.split("-")[0]
-				startMonth = startDate.split("-")[1]
-				displayStart = startYear + " " + calendar[startMonth]
-			else:
-				startYear = startDate.split("-")[0]
-				startMonth = startDate.split("-")[1]
-				startDay = startDate.split("-")[2]
-				if startDay.startswith("0"):
-					displayStartDay = startDay[1:]
-				else:
-					displayStartDay = startDay
-				displayStart = startYear + " " + calendar[startMonth] + " " + displayStartDay
-		else:
-			displayStart = startDate
-		if "-" in endDate:
-			if endDate.count('-') == 1:
-				endYear = endDate.split("-")[0]
-				endMonth = endDate.split("-")[1]
-				displayEnd = endYear + " " + calendar[endMonth]
-			else:
-				endYear = endDate.split("-")[0]
-				endMonth = endDate.split("-")[1]
-				endDay = endDate.split("-")[2]
-				if endDay.startswith("0"):
-					displayEndDay = endDay[1:]
-				else:
-					displayEndDay = endDay
-				displayEnd = endYear + " " + calendar[endMonth] + " " + displayEndDay
-		else:
-			displayEnd = endDate
-		displayDate = displayStart + "-" + displayEnd
-	else:
-		if "-" in normalDate:
-			if normalDate.count('-') == 1:
-				year = normalDate.split("-")[0]
-				month = normalDate.split("-")[1]
-				displayDate = year + " " + calendar[month]
-			else:
-				year = normalDate.split("-")[0]
-				month = normalDate.split("-")[1]
-				day = normalDate.split("-")[2]
-				if day.startswith("0"):
-					displayDay = day[1:]
-				else:
-					displayDay = day
-				displayDate = year + " " + calendar[month] + " " + displayDay
-		else:
-			displayDate = normalDate
-	return displayDate
-	
+		
 def makeNewCmpnt(newSeries, folder):
 	#print folder.attrib["name"]
 	firstDate = "3000-12-25"
@@ -128,7 +73,7 @@ def makeNewCmpnt(newSeries, folder):
 				eventTime = event.attrib["humanTime"].split(" ")[0]	
 			dateElement = ET.SubElement(pElement, "date")
 			dateElement.set("normal", eventTime)
-			dateElement.text = dacsFromNormal(eventTime)
+			dateElement.text = dacs.iso2DACS(eventTime)
 			dateElement.tail = event.text
 	if len(folder.find("recordEvents").findall("timestamp")) > 0:
 		for recordEvent in folder.find("recordEvents"):
@@ -140,7 +85,7 @@ def makeNewCmpnt(newSeries, folder):
 			unitdate.set("normal", normalDate)
 			if recordEvent.attrib["parser"] == "SmugMug":
 				unitdate.set("label", "SmugMug API last updated date")
-			unitdate.text = dacsFromNormal(normalDate)
+			unitdate.text = dacs.iso2DACS(normalDate)
 	else:
 		dateCheck = False
 		for timestamps in folder.xpath(".//timestamp"):
@@ -160,7 +105,7 @@ def makeNewCmpnt(newSeries, folder):
 		if dateCheck == True:
 			unitdate = ET.SubElement(did, "unitdate")
 			unitdate.set("normal", firstDate + "/" + lastDate)
-			unitdate.text = dacsFromNormal(firstDate + "/" + lastDate)
+			unitdate.text = dacs.iso2DACS(firstDate + "/" + lastDate)
 	fileCount = len(folder.findall("file"))
 	if fileCount > 0:
 		physdesc = ET.SubElement(did, "physdesc")
@@ -396,7 +341,7 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 																	normalDate = childDate.text.split("T")[0].replace(":", "-")
 																else:
 																	normalDate = childDate.text.split(" ")[0].replace(":", "-")
-																dacsDate = dacsFromNormal(normalDate)
+																dacsDate = dacs.iso2DACS(normalDate)
 																try:
 																	imageTitle = imageTitle + ", " + dacsDate
 																except:
@@ -460,6 +405,7 @@ for albumRow in csvList:
 			processTime = time.time() - startTime
 			print "Process took " + str(processTime) + " seconds or " + str(processTime/60) + " minutes or " + str(processTime/3600) + " hours"
 			
+			#track progress every 100
 			if str(rowCount).endswith("00"):
 				print rowCount
 			
@@ -531,7 +477,7 @@ for albumRow in csvList:
 					normalDate = timestamp.text.split(" ")[0].replace(":", "-")
 				unitdate = ET.SubElement(did, "unitdate")
 				unitdate.set("normal", normalDate)
-				unitdate.text = dacsFromNormal(normalDate)
+				unitdate.text = dacs.iso2DACS(normalDate)
 				if "source" in timestamp.attrib:
 					unitdate.set("label", timestamp.attrib["source"])
 				elif "parser" in timestamp.attrib:
@@ -544,7 +490,7 @@ for albumRow in csvList:
 				pElement = ET.SubElement(acqinfo, "p")
 				dateElement = ET.SubElement(pElement, "date")
 				dateElement.set("normal", accessionTime)
-				dateElement.text = dacsFromNormal(accessionTime)
+				dateElement.text = dacs.iso2DACS(accessionTime)
 				dateElement.tail = "Accession: " + metadataFilename.split(".")[0]
 				for event in metaRecord.find("curatorialEvents"):
 					pElement = ET.SubElement(acqinfo, "p")
@@ -558,7 +504,7 @@ for albumRow in csvList:
 						eventTime = event.attrib[human].split(" ")[0]	
 					dateElement = ET.SubElement(pElement, "date")
 					dateElement.set("normal", eventTime)
-					dateElement.text = dacsFromNormal(eventTime)
+					dateElement.text = dacs.iso2DACS(eventTime)
 					dateElement.tail = event.text
 			imageFolder = imagesPath.split("\\")[-1]
 			for sip in os.listdir(sipDir):

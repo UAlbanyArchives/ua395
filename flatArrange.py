@@ -14,7 +14,11 @@ reload(sys)
 sys.setdefaultencoding('UTF8')
 print sys.getdefaultencoding()
 
-workDir = "\\\\romeo\\Collect\\spe\\Greg\\Processing\\ua395"
+workDir = os.path.dirname(os.path.realpath(__file__))
+if os.name == "nt":
+	sipDir = "\\\\Lincoln\\Special Collections\\accessions\\SIP"
+else:
+	sipDir = "/media/bcadmin/Lincoln/Special Collections/accessions/SIP"
 inputDir = os.path.join(workDir, "flatBatches")
 parser = ET.XMLParser(remove_blank_text=True)
 arrangementList = []
@@ -26,59 +30,60 @@ albumCount = 0
 jobNumberCount = 0
 noNumberCount = 0
 
-for metadataFile in os.listdir(inputDir):
-	#print inputDir
-	if metadataFile.endswith(".xml"):
-		print metadataFile
-		metaInput = ET.parse(os.path.join(inputDir, metadataFile), parser)
-		meta = metaInput.getroot()
-		
-		
-		for job in meta:
-			if job.tag == "folder":
+for sip in os.listdir(sipDir):
+	if sip.startswith("ua395"):
+		for metadataFile in os.listdir(os.path.join(sipDir, sip)):
+			if metadataFile.endswith(".xml"):
+				print metadataFile
+				metaInput = ET.parse(os.path.join(sipDir, sip, metadataFile), parser)
+				meta = metaInput.getroot()
 				
-				albumCount = albumCount + 1
 				
-				if job.attrib["name"].isdigit() and job.attrib["name"].startswith("200"):
-					jobNumberCount = jobNumberCount + 1
-				else:
-					noNumberCount = noNumberCount + 1
-				
-				jobList = [""]
-				jobList.append(job.attrib["name"])
-				jobList.append(job.find("description").text)
-				jobList.append("") #scope
-				if job.find("recordEvents/timestamp") is None:
-					jobList.append("")
-					print "no timestamp for " + job.attrib["name"]
-				else:
-					if job.find("recordEvents/timestamp").text is None:
-						jobList.append("")
-						print "no timestamp for " + job.attrib["name"]
-					else:
-						if "T" in job.find("recordEvents/timestamp").text:
-							jobList.append(job.find("recordEvents/timestamp").text.split("T")[0].replace("-", ":"))
+				for job in meta:
+					if job.tag == "folder":
+						
+						albumCount = albumCount + 1
+						
+						if job.attrib["name"].isdigit() and job.attrib["name"].startswith("200"):
+							jobNumberCount = jobNumberCount + 1
 						else:
-							jobList.append(job.find("recordEvents/timestamp").text.split(" ")[0].replace("-", ":"))
-				fileCount = len(job.findall("file"))
-				jobList.append(str(fileCount))
-				jobList.append(job.find("path").text)
-				jobList.append(job.find("id").text)
-				jobList.append(metadataFile)
-				
-				uniList = []
-				for asciiItem in jobList:
-					uniList.append(asciiItem.encode(sys.getdefaultencoding()))
-				
-				arrangementList.append(uniList)
-				
+							noNumberCount = noNumberCount + 1
+						
+						jobList = [""]
+						jobList.append(job.attrib["name"])
+						jobList.append(job.find("description").text)
+						jobList.append("") #scope
+						if job.find("recordEvents/timestamp") is None:
+							jobList.append("")
+							print "no timestamp for " + job.attrib["name"]
+						else:
+							if job.find("recordEvents/timestamp").text is None:
+								jobList.append("")
+								print "no timestamp for " + job.attrib["name"]
+							else:
+								if "T" in job.find("recordEvents/timestamp").text:
+									jobList.append(job.find("recordEvents/timestamp").text.split("T")[0].replace("-", ":"))
+								else:
+									jobList.append(job.find("recordEvents/timestamp").text.split(" ")[0].replace("-", ":"))
+						fileCount = len(job.findall("file"))
+						jobList.append(str(fileCount))
+						jobList.append(job.find("path").text)
+						jobList.append(job.find("id").text)
+						jobList.append(metadataFile)
+						
+						uniList = []
+						for asciiItem in jobList:
+							uniList.append(asciiItem.encode(sys.getdefaultencoding()))
+						
+						arrangementList.append(uniList)
+					
 
 				
 print str(albumCount) + " total albums"
 print str(jobNumberCount) + " with job numbers"
 print str(noNumberCount) + " without job numbers"
 
-with open(os.path.join(workDir, "arrangmentDraft2.csv"), "wb") as f:
+with open(os.path.join(workDir, "arrangmentDraft3.csv"), "wb") as f:
 	writer = csv.writer(f, delimiter='|')
 	writer.writerows(arrangementList)
 	
