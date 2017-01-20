@@ -23,11 +23,11 @@ eadFile = os.path.join(processingDir, "ua395-frame.xml")
 if os.name == "nt":
 	templateFile = "\\\\romeo\\wwwroot\\eresources\\digital_objects\\ua395\\template.html"
 	sipDir = "\\\\LINCOLN\\Masters\\Special Collections\\accessions\\SIP"
-	dipDir = "\\\\romeo\\wwwroot\\eresources\\digital_objects\\ua395"
+	dipDir = "\\\\romeo\\wwwroot\\eresources\\digital_objects\\ua395-2"
 else:
 	templateFile = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395/template.html"
 	sipDir = "/media/bcadmin/Lincoln/Special Collections/accessions/SIP"
-	dipDir = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395"
+	dipDir = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395-2"
 	
 print sys.getfilesystemencoding()
 
@@ -130,7 +130,7 @@ def getPath(folder, pathList):
 	
 def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, templateFile, metaID):	
 	reload(sys)
-	sys.setdefaultencoding('mbcs')
+	sys.setdefaultencoding('utf-8')
 	
 	parser = ET.XMLParser(remove_blank_text=True)
 	templateInput = ET.parse(templateFile, parser)
@@ -142,17 +142,20 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 	if os.name == "nt":
 		path = metaRecord.find("path").text.replace("/", "\\").replace("-\\", "\\")
 	else:
-		path = metaRecord.find("path").text.replace("-\\", "\\")
+		path = metaRecord.find("path").text.split("/")[-1]
 	if path.endswith("-"):
 		path = path[:-1]
-	pathSip = os.path.join(sipDir, sip, "data", "ualbanyphotos")
+	pathSip = os.path.join(sipDir, sip, "data", "data")
 	folderSip = os.path.join(pathSip, path)
-	folderThumbs = os.path.join(folderSip, "thumbs")
+	#thumbs no longer in sip
+	#folderThumbs = os.path.join(folderSip, "thumbs")
 	dipId = unitId.split("-")[1].split("_")[0]
 	folderDip = os.path.join(dipDir, dipId)
 	if not os.path.isdir(folderDip):
 		os.mkdir(folderDip)
 	
+	"""
+	#will create static access pages later in the process for easier maintenence
 	div = template.find(".//div[@id='dynamicContent']")
 	for button in div.getparent().find("div/div"):
 		if button.tag == "a":
@@ -244,7 +247,7 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 	links.set("id", "links")
 	sequence = ET.SubElement(links, "div")
 	sequence.set("class", "col-md-12 sequence")
-	
+	"""
 	"""
 	for child in cmpnt:
 		if child.tag.startswith("c0"):
@@ -264,21 +267,67 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 			img.set("src", dipId + "/" + newFilename + "T" + ext)
 			img.set("alt", childDateText)
 	"""
+	folderSizeCount = 0
 	#limit for testing:
 	#if 5 == 1:
 	if 5 > 1:
 		imageCount = 0
 		validExt = [".jpg", ".jpeg", ".png"]
-		for root, dirs, files in os.walk(imageDir):
+		convertExt = [".tif", ".tiff"]
+		allExt = [".jpg", ".jpeg", ".png", ".tif", ".tiff"]
+		for root, dirs, files in os.walk(folderSip):
 			for imageFile in files:
 				if not imageFile.lower() == "thumbs.db":
 					image = os.path.join(root, imageFile)
-					if os.path.isfile(image):
-						if os.path.splitext(imageFile)[1].lower() in validExt:
+					if not os.path.isfile(image):
+						print ("ERROR in folder " + path + ", not an image: " + image)
+						exceptMsg = "\n********************************************************************************************"
+						exceptMsg = exceptMsg + "\nDuplicate im image name at " + str(time.strftime("%Y-%m-%d %H:%M:%S"))
+						exceptMsg = exceptMsg + "\nID: " + metaID
+						exceptMsg = exceptMsg + "\nID: " + unitId
+						exceptMsg = exceptMsg + str(traceback.format_exc())
+						updateLog = open(os.path.join(processingDir, "imageErrorLog.txt"), "a")
+						updateLog.write(exceptMsg)
+						updateLog.close()
+						eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
+						eadWrite = open("ua395-test.xml", "w")
+						eadWrite.write(eadString)
+						eadWrite.close()
+					else:
+						imgExt = os.path.splitext(imageFile)[1].lower()
+						if not imgExt in allExt:
+							print ("ERROR in folder " + path + ", incorrect image extension: " + image)
+							print ("--> " + imgExt)
+							exceptMsg = "\n********************************************************************************************"
+							exceptMsg = exceptMsg + "\nDuplicate im image name at " + str(time.strftime("%Y-%m-%d %H:%M:%S"))
+							exceptMsg = exceptMsg + "\nID: " + metaID
+							exceptMsg = exceptMsg + "\nID: " + unitId
+							exceptMsg = exceptMsg + str(traceback.format_exc())
+							updateLog = open(os.path.join(processingDir, "imageErrorLog.txt"), "a")
+							updateLog.write(exceptMsg)
+							updateLog.close()
+							eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
+							eadWrite = open("ua395-test.xml", "w")
+							eadWrite.write(eadString)
+							eadWrite.close()
+						else:
 							try:
 								testImage = Image.open(image)
 								fileSize = os.path.getsize(image)
-								if fileSize > 0:
+								if fileSize == 0:
+									exceptMsg = "\n********************************************************************************************"
+									exceptMsg = exceptMsg + "\nNo Image Size - " + str(time.strftime("%Y-%m-%d %H:%M:%S"))
+									exceptMsg = exceptMsg + "\nID: " + metaID
+									exceptMsg = exceptMsg + "\nID: " + unitId
+									exceptMsg = exceptMsg + str(traceback.format_exc())
+									updateLog = open(os.path.join(processingDir, "imageErrorLog.txt"), "a")
+									updateLog.write(exceptMsg)
+									updateLog.close()
+									eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
+									eadWrite = open("ua395-test.xml", "w")
+									eadWrite.write(eadString)
+									eadWrite.close()
+								else:
 									imageCount = imageCount + 1
 																		
 									fileName = os.path.splitext(image)[0]
@@ -286,17 +335,44 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 									fileExt = ext
 
 									newFilename = unitId + "." + str(imageCount)
-									if not os.path.isfile(os.path.join(folderDip, newFilename + ext)):
-										shutil.copy2(image, os.path.join(folderDip, newFilename + ext))
+									newFullPath = os.path.join(folderDip, newFilename + ext)
+									if not os.path.isfile(newFullPath):
+										if imgExt in convertExt:
+											convertCmd = "convert \"" + image + "\"[0] \"" + newFullPath + "\""
+											convert = Popen(convertCmd, shell=True, stdout=PIPE, stderr=PIPE)
+											stdout, stderr = convert.communicate()
+										else:
+											shutil.copy2(image, newFullPath)
+
+										#add to final folder size
+										fileSize = os.path.getsize(newFullPath)
+										folderSizeCount = folderSizeCount + fileSize
+
+									else:
+										exceptMsg = "\n********************************************************************************************"
+										exceptMsg = exceptMsg + "\nDuplicate im image name at " + str(time.strftime("%Y-%m-%d %H:%M:%S"))
+										exceptMsg = exceptMsg + "\nID: " + metaID
+										exceptMsg = exceptMsg + "\nID: " + unitId
+										exceptMsg = exceptMsg + str(traceback.format_exc())
+										updateLog = open(os.path.join(processingDir, "imageErrorLog.txt"), "a")
+										updateLog.write(exceptMsg)
+										updateLog.close()
+										eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
+										eadWrite = open("ua395-test.xml", "w")
+										eadWrite.write(eadString)
+										eadWrite.close()
+
+
 									newThumbnail = os.path.join(folderDip, newFilename + "T" + ext)
 									if not os.path.isfile(os.path.join(folderDip, newThumbnail)):
-										shutil.copy2(image, newThumbnail)
-										mogrifyCmd = "mogrify -resize 150x150 \"" + newThumbnail + "\""
-										mogrify = Popen(mogrifyCmd, shell=True, stdout=PIPE, stderr=PIPE)
-										stdout, stderr = mogrify.communicate()
+
+										thumbCmd = "convert -resize 150x150 \"" + newFullPath + "\" \"" +  newThumbnail + "\""
+										makeThumb = Popen(thumbCmd, shell=True, stdout=PIPE, stderr=PIPE)
+										stdout, stderr = makeThumb.communicate()
 										#if len(stderr) > 0:
 											#print "thumbnail mogrify  error: " + stderr
-											
+									"""
+									#Move HTML creation to other script
 									for child in metaRecord:
 										if child.tag == "file":
 											if not child.attrib["name"].lower() == "thumbs.db":
@@ -356,6 +432,7 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 													img = ET.SubElement(aThumb, "img")
 													img.set("src", dipId + "/" + unitId + "." + str(imageCount) + "T" + checkExt)
 													img.set("alt", imageTitle)
+									"""
 											
 							except:
 								exceptMsg = "\n********************************************************************************************"
@@ -363,19 +440,30 @@ def makeGallery(sipDir, dipDir, accessionNumber, metaRecord, unitId, cmpnt, temp
 								exceptMsg = exceptMsg + "\nID: " + metaID
 								exceptMsg = exceptMsg + "\nID: " + unitId
 								exceptMsg = exceptMsg + str(traceback.format_exc())
-								updateLog = open(os.path.join(processingDir, "errorLogFlat.txt"), "a")
+								updateLog = open(os.path.join(processingDir, "imageErrorLog.txt"), "a")
 								updateLog.write(exceptMsg)
 								updateLog.close()
+								eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
+								eadWrite = open("ua395-test.xml", "w")
+								eadWrite.write(eadString)
+								eadWrite.close()
+
 	
-			
+	folderSizeFinal = sizeof_fmt(folderSizeCount)
+	extentFinal = newFolder.find("did/physdesc/extent")
+	extentFinal.text = folderSizeFinal.split("-")[0]
+	extentFinal.set("unit", folderSize.split("-")[1])
+	
+	"""
+	#move writing html to other script
 	htmlString = ET.tostring(template, pretty_print=True, method='html', xml_declaration=False, doctype="<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">")
 	htmlWrite = open(os.path.join(dipDir, cmpnt.attrib["id"] + ".html"), "w")
 	htmlWrite.write(htmlString)
 	htmlWrite.close()
-	
+	"""
 
 reload(sys)
-sys.setdefaultencoding('mbcs')
+sys.setdefaultencoding('utf-8')
 print sys.getdefaultencoding()
 
 parser = ET.XMLParser(remove_blank_text=True)
@@ -383,15 +471,31 @@ eadInput = ET.parse(eadFile, parser)
 ead = eadInput.getroot()
 
 #csv.register_dialect('piper', delimiter='|', quoting=csv.QUOTE_NONE)
-csvInput = os.path.join(processingDir, "arrangmentDraft2.csv")
+csvInput = os.path.join(processingDir, "arrangmentDraftFinal.csv")
 csvFile = open(csvInput, "r")
 csvList = csv.reader(csvFile, delimiter='|')
+
+totalCount = 0
+for albumRow in csvList:
+	fileCount = albumRow[5]
+	arrangement = albumRow[0]
+	if len(arrangement) > 0 and not arrangement.lower() == "zero":
+		if int(fileCount) > 0:
+			totalCount = totalCount + 1
+csvFile.close()
+
+csvInput = os.path.join(processingDir, "arrangmentDraftFinal.csv")
+csvFile = open(csvInput, "r")
+csvList = csv.reader(csvFile, delimiter='|')
+
 rowCount = 0
 for albumRow in csvList:
 	fileCount = albumRow[5]
 	arrangement = albumRow[0]
 	if len(arrangement) > 0 and not arrangement.lower() == "zero":
 		if int(fileCount) > 0:
+			startProcessTime = time.time()
+
 			rowCount = rowCount + 1
 			metadataFilename = albumRow[8]
 			imagesPath = albumRow[6]
@@ -400,14 +504,11 @@ for albumRow in csvList:
 			scope = albumRow[3]
 			name = albumRow[1]
 			arrangement = albumRow[0]
-			
-			print metaID
-			processTime = time.time() - startTime
-			print "Process took " + str(processTime) + " seconds or " + str(processTime/60) + " minutes or " + str(processTime/3600) + " hours"
+						
 			
 			#track progress every 100
-			if str(rowCount).endswith("00"):
-				print rowCount
+			#if str(rowCount).endswith("00"):
+				#print rowCount
 			
 			for sip in os.listdir(sipDir):
 				for sipFile in os.listdir(os.path.join(sipDir, sip)):
@@ -415,7 +516,7 @@ for albumRow in csvList:
 						metadataFile = os.path.join(sipDir, sip, sipFile)
 			metadataInput = ET.parse(metadataFile, parser)
 			meta = metadataInput.getroot()
-			accessionTime = meta["submitted"]
+			accessionTime = meta.attrib["submitted"]
 			for folder in meta.xpath(".//folder"):
 				if folder.find("id").text == metaID:
 					metaRecord = folder
@@ -506,7 +607,12 @@ for albumRow in csvList:
 					dateElement.set("normal", eventTime)
 					dateElement.text = dacs.iso2DACS(eventTime)
 					dateElement.tail = event.text
-			imageFolder = imagesPath.split("\\")[-1]
+			
+			#image section
+			if os.name == "nt":
+				imageFolder = imagesPath.split("\\")[-1]
+			else:
+				imageFolder = imagesPath.split("/")[-1]
 			for sip in os.listdir(sipDir):
 				if sip == metadataFilename.split(".xml")[0]:
 					for sipfolder in os.listdir(os.path.join(sipDir, sip)):
@@ -519,17 +625,20 @@ for albumRow in csvList:
 										correctPathMatch = correctPath
 										matchfolder = albumFolder
 			validExt = [".jpg", ".jpeg", ".png"]
+			convertExt = [".tif", ".tiff"]
 			imageCount = 0
 			sizeCount = 0
 			imageDir = os.path.join(correctPathMatch, matchfolder)
 			for root, dirs, files in os.walk(imageDir):
 				for file in files:
 					if not file.lower() == "thumbs.db":
-						if os.path.splitext(file)[1].lower() in validExt:
+						imageCount = imageCount + 1
+						if os.path.splitext(file)[1].lower() in validExt or os.path.splitext(file)[1].lower() in convertExt:
 							fileSize = os.path.getsize(os.path.join(root, file))
 							if fileSize > 0:
-								imageCount = imageCount + 1
 								sizeCount = sizeCount + fileSize
+						#elif os.path.splitext(file)[1].lower() in convertExt:
+
 			physdesc = ET.SubElement(did, "physdesc")
 			folderSize = sizeof_fmt(sizeCount)
 			extent = ET.SubElement(physdesc, "extent")
@@ -545,15 +654,25 @@ for albumRow in csvList:
 			dao.set("show", "new")
 			dao.set("href", "http://library.albany.edu/speccoll/findaids/eresources/digital_objects/ua395/" + newId + ".html")
 			did.append(dao)
-			#makeGallery(sipDir, dipDir, metadataFilename.split(".xml")[0], metaRecord, newId, newFolder, templateFile, metaID)
+			makeGallery(sipDir, dipDir, metadataFilename.split(".xml")[0], metaRecord, newId, newFolder, templateFile, metaID)
 			
 			
 			if str(rowCount).endswith("00"):
 				eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
-				eadWrite = open("ua395.xml", "w")
+				eadWrite = open("ua395-test.xml", "w")
 				eadWrite.write(eadString)
 				eadWrite.close()
+
+			processTime = time.time() - startProcessTime
+			print "Process took " + str(round(processTime, 2)) + " seconds or " + str(round(processTime/60, 2)) + " minutes or " + str(round(processTime/3600, 2)) + " hours"
 			
+			totalTimeNow = time.time() - startTime
+			avgTime = totalTimeNow/rowCount
+			print "Average time is " + str(round(avgTime, 2)) + " seconds"
+			remaining = totalCount-rowCount
+			print str(remaining) + " remaining"
+			estimateTime = avgTime*remaining
+			print "Estimated time left: " + str(round(estimateTime, 2)) + " seconds or " + str(round(estimateTime/60, 2)) + " minutes or " + str(round(estimateTime/3600, 2)) + " hours"			
 					
 			
 						
@@ -563,6 +682,6 @@ print rowCount
 csvFile.close()
 	
 eadString = ET.tostring(ead, pretty_print=True, xml_declaration=True, encoding="utf-8")
-eadWrite = open("ua395.xml", "w")
+eadWrite = open("ua395-test.xml", "w")
 eadWrite.write(eadString)
 eadWrite.close()

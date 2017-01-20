@@ -1,0 +1,1745 @@
+
+********************************************************************************************
+Duplicate im image name at 2017-01-13 15:05:29
+ID: 4d397375-5283-45de-97cd-ac8470acef3b
+ID: nam_ua395-6.1_1None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-13 15:25:50
+ID: 98f7fcd5-46db-4626-a4fd-2cc4eb5209b1
+ID: nam_ua395-6.1_9None
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:35
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:35
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:41
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:41
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:41
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:42
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:42
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:42
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:42
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:56
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:21:56
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:01
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:01
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:01
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:01
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:01
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:02
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:02
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:39
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:39
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 17:22:45
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:14
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:17
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:21
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:23
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:25
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:26
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:28
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:31
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:32
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:33
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:35
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:36
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:39
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:41
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:43
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:45
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:46
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:51
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:52
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:53
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:55
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 19:15:55
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-13 21:18:23
+ID: ea0fabcd-f3db-4dd8-bf29-6af5574c01ee
+ID: nam_ua395-7.1_29Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-14 02:43:07
+ID: 18d6d833-e3e1-489c-bb0e-e66d270c3a5e
+ID: nam_ua395-1.10_33Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 317, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Duplicate im image name at 2017-01-14 09:20:00
+ID: a6ee95c4-45bb-49bc-a904-74df3d60bfc3
+ID: nam_ua395-1.6_20None
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:01
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:02
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:08
+ID: 08b1ccfc-2fd5-485e-9339-4ad54cf52948
+ID: nam_ua395-1.10_7Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:22
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:23
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:38:29
+ID: a21abd34-466f-43de-a2a6-5c327c6946fe
+ID: nam_ua395-1.10_8Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:10
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:10
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 11:39:15
+ID: 1dfdbdb4-54dd-459e-a2c8-42f517ea7057
+ID: nam_ua395-1.10_9Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:39
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:41
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:45
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:47
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:49
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:50
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:52
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:54
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:55
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:57
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:35:58
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:00
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:02
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:05
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:07
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:08
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:09
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:15
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:16
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2009, in open
+    return factory(fp, filename)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 215, in _open
+    self.load()
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 218, in load
+    im = self.ico.getimage(self.size)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 106, in getimage
+    return self.frame(i)
+  File "/usr/lib/python2.7/dist-packages/PIL/IcoImagePlugin.py", line 125, in frame
+    im = BmpImagePlugin.DibImageFile(self.buf)
+  File "/usr/lib/python2.7/dist-packages/PIL/ImageFile.py", line 92, in __init__
+    self._open()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 177, in _open
+    self._bitmap()
+  File "/usr/lib/python2.7/dist-packages/PIL/BmpImagePlugin.py", line 100, in _bitmap
+    raise IOError("Unsupported BMP header type (%d)" % len(s))
+IOError: Unsupported BMP header type (65536)
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:18
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:19
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 13:36:19
+ID: 5fa9ee1a-89f9-4b35-92d6-9d8c20e52d49
+ID: nam_ua395-8.1_4Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 15:44:41
+ID: ea0fabcd-f3db-4dd8-bf29-6af5574c01ee
+ID: nam_ua395-7.1_29Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Image failed at 2017-01-17 21:11:27
+ID: 18d6d833-e3e1-489c-bb0e-e66d270c3a5e
+ID: nam_ua395-1.10_33Traceback (most recent call last):
+  File "flatArrangeCreate.py", line 315, in makeGallery
+    testImage = Image.open(image)
+  File "/usr/lib/python2.7/dist-packages/PIL/Image.py", line 2028, in open
+    raise IOError("cannot identify image file")
+IOError: cannot identify image file
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 03:51:29
+ID: a6ee95c4-45bb-49bc-a904-74df3d60bfc3
+ID: nam_ua395-1.6_20None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 04:01:19
+ID: 437cb96c-c1c1-4012-8817-4363561cffa5
+ID: nam_ua395-4.2_3None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 04:28:23
+ID: 4d99c328-9b90-4803-bb4b-a6b29493abfd
+ID: nam_ua395-6.1_286None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 04:35:18
+ID: 7234be92-e7fd-4481-bf43-4fc226abf9d8
+ID: nam_ua395-8.1_28None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 04:40:21
+ID: cc879dc8-a722-43a9-988a-365bd80028e1
+ID: nam_ua395-7.1_62None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 05:00:20
+ID: 6d02aa6d-4911-4ce1-afee-87f7410f9794
+ID: nam_ua395-7.2_58None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 05:22:33
+ID: 95a9e724-6a76-4f1d-8375-44e15c848184
+ID: nam_ua395-1.1_101None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:12
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:13
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:14
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:14
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:15
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:15
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:15
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:16
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:16
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:17
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:17
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:18
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:18
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:18
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:19
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:19
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:20
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:20
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:20
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:21
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
+
+********************************************************************************************
+Duplicate im image name at 2017-01-18 13:33:21
+ID: cdb3b679-5429-4349-8629-8f45542b68ec
+ID: nam_ua395-8.1_67None
