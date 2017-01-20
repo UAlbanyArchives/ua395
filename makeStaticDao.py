@@ -4,11 +4,47 @@ from lxml import etree as ET
 
 if os.name == "nt":
 	templateFile = "\\\\romeo\\wwwroot\\eresources\\digital_objects\\ua395\\template.html"
+	eadFile = ""
+	daoDir = ""
+	metaDir = ""
 else:
 	templateFile = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395/template.html"
+	eadFile = "/media/bcadmin/Collect/spe/Tools/collections/ua395.xml"
+	daoDir = "/media/bcadmin/wwwroot/eresources/digital_objects/ua395"
+	metaDir = "/media/bcadmin/Lincoln/Special Collections/accessions/SIP"
 
 
-div = template.find(".//div[@id='dynamicContent']")
+parser = ET.XMLParser(remove_blank_text=True)
+eadXML = ET.parse(eadFile, parser)
+ead = eadXML.getroot()
+
+				
+
+
+for dao in ead.iterfind(".//dao"):
+	cmpnt = dao.getparent().getparent()
+	unitId = cmpnt.attrib["id"]
+
+	for para in cmpnt.find("acqinfo"):
+		if "Accession: " in para.find("date").tail:
+			accessionNumber = para.find("date").tail.split("Accession: ")[1]
+
+	sipDir = os.path.join(metaDir, accessionNumber)
+	parser = ET.XMLParser(remove_blank_text=True)
+	metadataFile = ET.parse(os.path.join(sipDir, accessionNumber + ".xml"), parser)
+	metaRoot = metadataFile.getroot()
+	for folder in metaRoot:
+		if folder.tag == "folder":
+			if folder.find("description").text == cmpnt.find("did/unittitle").text:
+				metaRecord = folder
+
+	folderSip = os.path.join(daoDir, cmpnt.attrib["id"].split("-")[1].split("_")[0])
+
+	parser = ET.XMLParser(remove_blank_text=True)
+	templateInput = ET.parse(templateFile, parser)
+	template = templateInput.getroot()
+
+	div = template.find(".//div[@id='dynamicContent']")
 	for button in div.getparent().find("div/div"):
 		if button.tag == "a":
 			if button.attrib["id"] == "cmpntLink":
@@ -99,3 +135,84 @@ div = template.find(".//div[@id='dynamicContent']")
 	links.set("id", "links")
 	sequence = ET.SubElement(links, "div")
 	sequence.set("class", "col-md-12 sequence")
+
+	
+	for root, dirs, files in os.walk(folderSip):
+			for imageFile in files:
+				if not imageFile.lower() == "thumbs.db":
+					image = os.path.join(root, imageFile)
+
+
+	for child in metaRecord:
+		if child.tag == "file":
+			if not child.attrib["name"].lower() == "thumbs.db":
+				if child.attrib["name"] == imageFile:
+			
+					#fileExt = ".jpg"
+					aThumb = ET.SubElement(sequence, "a")
+					aThumb.set("itemscope", "True")
+					aThumb.set("itemprop", "associatedMedia")
+					aThumb.set("itemtype", "http://schema.org/ImageObject")
+					aThumb.set("class", "thumbnail")
+					if os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + fileExt)):
+						checkExt = fileExt
+					elif os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + ".jpg")):
+						checkExt = ".jpg"
+					elif os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + ".JPG")):
+						checkExt = ".JPG"
+					elif os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + ".jpeg")):
+						checkExt = ".jpeg"
+					elif os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + ".JPEG")):
+						checkExt = ".JPEG"
+					elif os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + ".png")):
+						checkExt = ".png"
+					elif os.path.isfile(os.path.join(folderDip, unitId + "." + str(imageCount) + ".PNG")):
+						checkExt = ".PNG"
+					else:
+						checkExt = fileExt
+					aThumb.set("href", dipId + "/" + unitId + "." + str(imageCount) + checkExt)
+					imageTitle = ""
+					if not child.find("description/unittitle") is None and child.find("description/unittitle").text:
+						imageTitle = child.find("description/unittitle").text
+					elif not child.find("description/scopecontent") is None and child.find("description/scopecontent").text:
+						imageTitle = child.find("description/scopecontent").text
+					elif child.find("description").text:
+						imageTitle = child.find("description").text
+					else:
+						imageTitle = child.attrib["name"]
+					for childDate in child.find("recordEvents"):
+						if childDate.tag == "timestamp":
+							if not childDate.text.startswith("0000"):
+								if "T" in childDate.text:
+									normalDate = childDate.text.split("T")[0].replace(":", "-")
+								else:
+									normalDate = childDate.text.split(" ")[0].replace(":", "-")
+								dacsDate = dacs.iso2DACS(normalDate)
+								try:
+									imageTitle = imageTitle + ", " + dacsDate
+								except:
+									print child.find("id").text
+									imageTitle = imageTitle + ", " + dacsDate
+								if "source" in childDate.attrib:
+									imageTitle = imageTitle + " (" + childDate.attrib["source"] + ") "
+								elif "parser" in childDate.attrib:
+									imageTitle = imageTitle + " (" + childDate.attrib["parser"] + ") "
+					aThumb.set("title", imageTitle)
+					aThumb.set("data-gallery", "True")
+					img = ET.SubElement(aThumb, "img")
+					img.set("src", dipId + "/" + unitId + "." + str(imageCount) + "T" + checkExt)
+					img.set("alt", imageTitle)
+
+
+	htmlString = ET.tostring(template, pretty_print=True, method='html', xml_declaration=False, doctype="<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">")
+	
+	#htmlWrite = open(os.path.join(dipDir, cmpnt.attrib["id"] + ".html"), "w")
+	htmlWrite = open(os.path.join("/home/bcadmin/Desktop/Processing/ua395/testDir", cmpnt.attrib["id"] + ".html"), "w")
+	htmlWrite.write(htmlString)
+	htmlWrite.close()
+	"""
+
+	f = open("testOut2.html", "wb")
+	f.write(htmlString)
+	f.close()
+	"""
