@@ -144,9 +144,10 @@ for dao in ead.iterfind(".//dao"):
 
 
 	for child in metaRecord:
-		if child.tag == "file":
+			print child.attrib["name"]
 			if not child.attrib["name"].lower() == "thumbs.db":
 				if child.attrib["name"] == imageFile:
+					print "found Match :)"
 			
 					#fileExt = ".jpg"
 					aThumb = ET.SubElement(sequence, "a")
